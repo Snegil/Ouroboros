@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Gravity))]
 public class PlayerMovement : MonoBehaviour
 {
     bool isMoving = false;

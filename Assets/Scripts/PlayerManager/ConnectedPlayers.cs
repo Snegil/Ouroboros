@@ -11,6 +11,7 @@ public class ConnectedPlayers : MonoBehaviour
     PlayerManager playerManager;
 
     LineRenderer lineRenderer;
+    PolygonCollider2D meshCollider;
 
     Transform thatSkink;
     Transform otherSkink;
@@ -20,8 +21,12 @@ public class ConnectedPlayers : MonoBehaviour
     [SerializeField]
     float sagAmount = 1f;
 
+    Mesh lineMesh;
+    Camera mainCamera;
     void Start()
     {
+        lineMesh = new Mesh();
+        mainCamera = Camera.main;
         playerManager = GetComponent<PlayerManager>();
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = segments;
@@ -46,6 +51,7 @@ public class ConnectedPlayers : MonoBehaviour
 
             lineRenderer.SetPosition(i, point);
         }
+        
     }
     Vector3 CalculateQuadraticBezierPoint(float t, Vector3 a, Vector3 b, Vector3 c)
     {

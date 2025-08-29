@@ -103,8 +103,6 @@ GameObject:
   - component: {fileID: 1661924000506941492}
   - component: {fileID: 2465080075943440739}
   - component: {fileID: 2899483657974858757}
-  - component: {fileID: 6256671877664690492}
-  - component: {fileID: 2905965317575146860}
   m_Layer: 7
   m_Name: SkinkTwo
   m_TagString: SkinkTwo
@@ -192,7 +190,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -210,7 +208,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.21133333}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.28866667}
@@ -354,31 +352,3 @@ MonoBehaviour:
   m_DefaultActionMap: PLAYERTWO
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &6256671877664690492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3020757477202056540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21bb2e5cb8a00eb45add4a1040079015, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2905965317575146860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3020757477202056540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3370362761681c040a39f2c6d4a781bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  connectionDistance: 10
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0

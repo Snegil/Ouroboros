@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour
 
 
     ConnectedPlayers connectedPlayers;
-
+    PlayerManagerPosition playerManagerPosition;
     bool isJoint = true;
     List<bool> splitAction = new();
     
@@ -25,7 +25,13 @@ public class PlayerManager : MonoBehaviour
         thatSkink = GameObject.FindWithTag("SkinkOne");
         otherSkink = GameObject.FindWithTag("SkinkTwo");
 
+        thatSkink.GetComponent<SpringJoint2D>().connectedBody = otherSkink.GetComponent<Rigidbody2D>();
+        otherSkink.GetComponent<SpringJoint2D>().connectedBody = thatSkink.GetComponent<Rigidbody2D>();
+
         connectedPlayers = GetComponent<ConnectedPlayers>();
+
+        playerManagerPosition = gameObject.AddComponent<PlayerManagerPosition>();
+        playerManagerPosition.SetPlayerTransforms(thatSkink.transform, otherSkink.transform);
     }
 
     public GameObject GetThatSkink()
