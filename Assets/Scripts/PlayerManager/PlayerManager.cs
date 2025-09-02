@@ -16,7 +16,7 @@ public class PlayerManager : MonoBehaviour
     PlayerManagerPosition playerManagerPosition;
     bool isJoint = true;
     List<bool> splitAction = new();
-    
+
     public bool IsJoint { get { return isJoint; } }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,7 +31,7 @@ public class PlayerManager : MonoBehaviour
         connectedPlayers = GetComponent<ConnectedPlayers>();
 
         playerManagerPosition = gameObject.AddComponent<PlayerManagerPosition>();
-        playerManagerPosition.SetPlayerTransforms(thatSkink.transform, otherSkink.transform);
+        playerManagerPosition.SetPlayerManager(this);
     }
 
     public GameObject GetThatSkink()
@@ -72,7 +72,7 @@ public class PlayerManager : MonoBehaviour
         thatSkink.GetComponent<SpringJoint2D>().enabled = false;
         otherSkink.GetComponent<SpringJoint2D>().enabled = false;
     }
-    
+
     public void ConnectSkinks()
     {
         RaycastHit2D raycastHit2D = Physics2D.Raycast(thatSkink.transform.position, (otherSkink.transform.position - thatSkink.transform.position).normalized, connectionDistance, layerMask);
@@ -84,11 +84,16 @@ public class PlayerManager : MonoBehaviour
             connectedPlayers.ToggleLine();
             thatSkink.GetComponent<SpringJoint2D>().enabled = true;
             otherSkink.GetComponent<SpringJoint2D>().enabled = true;
-        }        
+        }
     }
     public void ClearSplitAction()
     {
         if (splitAction.Count <= 0) { return; }
         splitAction.Clear();
+    }
+    
+    public Vector2 AveragePosition()
+    {
+        return (thatSkink.transform.position + otherSkink.transform.position) / 2f;
     }
 }
