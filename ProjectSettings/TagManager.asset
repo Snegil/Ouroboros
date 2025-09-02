@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - SkinkOne
-  - SkinkTwo
   - PlayerManager
+  - PlayerOne
+  - PlayerTwo
   layers:
   - Default
   - TransparentFX

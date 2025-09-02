@@ -22,8 +22,8 @@ public class PlayerManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        thatSkink = GameObject.FindWithTag("SkinkOne");
-        otherSkink = GameObject.FindWithTag("SkinkTwo");
+        thatSkink = GameObject.FindWithTag("PlayerOne");
+        otherSkink = GameObject.FindWithTag("PlayerTwo");
 
         thatSkink.GetComponent<SpringJoint2D>().connectedBody = otherSkink.GetComponent<Rigidbody2D>();
         otherSkink.GetComponent<SpringJoint2D>().connectedBody = thatSkink.GetComponent<Rigidbody2D>();
