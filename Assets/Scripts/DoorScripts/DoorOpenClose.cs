@@ -6,7 +6,7 @@ public class DoorOpenClose : MonoBehaviour
     Vector2 openLocation;
     Vector2 closeLocation;
 
-    [Space, SerializeField, Header("The speed of the door opening.")]
+    [Space, SerializeField, Header("The speed of the door opening and closing.")]
     float lerpSpeed = 1f;
 
     float t = 0;
