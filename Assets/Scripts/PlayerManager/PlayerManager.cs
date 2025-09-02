@@ -78,7 +78,7 @@ public class PlayerManager : MonoBehaviour
         RaycastHit2D raycastHit2D = Physics2D.Raycast(thatSkink.transform.position, (otherSkink.transform.position - thatSkink.transform.position).normalized, connectionDistance, layerMask);
         Debug.DrawRay(thatSkink.transform.position, (otherSkink.transform.position - thatSkink.transform.position).normalized * connectionDistance, Color.blue, 1f);
         if (!raycastHit2D) { return; }
-        if (raycastHit2D.collider.CompareTag("SkinkTwo"))
+        if (raycastHit2D.collider.CompareTag("PlayerTwo"))
         {
             isJoint = true;
             connectedPlayers.ToggleLine();
