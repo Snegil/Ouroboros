@@ -66,14 +66,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Annoyance: 0
     - _EnableExternalAlpha: 0
-    - _NoiseScale: 10
-    - _TimeScale: 0.005
+    - _Float: 0.5
+    - _NoiseScale: 5
+    - _TimeScale: 0.5
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour1: {r: 0.9433962, g: 0.72211295, b: 0.53844786, a: 1}
-    - _Colour2: {r: 0.6217064, g: 0.8113208, b: 0.6084906, a: 1}
+    - _Colour1: {r: 1, g: 0.39655167, b: 0, a: 1}
+    - _Colour2: {r: 0.26415092, g: 0.2631248, b: 0.25542894, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

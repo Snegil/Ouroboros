@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SplitSkinks : MonoBehaviour
+public class SplitAction : MonoBehaviour
 {
     PlayerManager playerManager;
 

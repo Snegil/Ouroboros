@@ -22,8 +22,7 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving)
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
-        }
-        
+        }        
     }
     public void Movement(InputAction.CallbackContext context)
     {
@@ -38,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.started)
         {
             isMoving = true;
+            transform.localScale = input.x > 0 ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
         }
     }
 }
