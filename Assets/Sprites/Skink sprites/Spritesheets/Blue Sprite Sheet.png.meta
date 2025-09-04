@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 8462891d8f0b07c4ca5b98e1e943f76a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8668922701901951622
+    second: Blue Sprite Sheet_0
+  - first:
+      213: 8760829020598215388
+    second: Blue Sprite Sheet_1
+  - first:
+      213: -6137997404408158729
+    second: Blue Sprite Sheet_2
+  - first:
+      213: 4725587558935166476
+    second: Blue Sprite Sheet_3
+  - first:
+      213: 4261794032368672001
+    second: Blue Sprite Sheet_4
+  - first:
+      213: -3259822914325665562
+    second: Blue Sprite Sheet_5
+  - first:
+      213: 1871379707402481810
+    second: Blue Sprite Sheet_6
+  - first:
+      213: 3485480760446799740
+    second: Blue Sprite Sheet_7
+  - first:
+      213: 4122551778733476702
+    second: Blue Sprite Sheet_8
+  - first:
+      213: 306244199488485718
+    second: Blue Sprite Sheet_9
+  - first:
+      213: -6511800074823408663
+    second: Blue Sprite Sheet_10
+  - first:
+      213: 4695154535114090682
+    second: Blue Sprite Sheet_11
+  - first:
+      213: -6767155795265628245
+    second: Blue Sprite Sheet_12
+  - first:
+      213: 8278712400970237427
+    second: Blue Sprite Sheet_13
+  - first:
+      213: -5745463466067285060
+    second: Blue Sprite Sheet_14
+  - first:
+      213: 6623783554113669167
+    second: Blue Sprite Sheet_15
+  - first:
+      213: 2022940192114995581
+    second: Blue Sprite Sheet_16
+  - first:
+      213: -5875088016320868293
+    second: Blue Sprite Sheet_17
+  - first:
+      213: -6444145751099862814
+    second: Blue Sprite Sheet_18
+  - first:
+      213: 2086875011779692809
+    second: Blue Sprite Sheet_19
+  - first:
+      213: 6585572616613024757
+    second: Blue Sprite Sheet_20
+  - first:
+      213: 878894701885984308
+    second: Blue Sprite Sheet_21
+  - first:
+      213: -7336036798216711811
+    second: Blue Sprite Sheet_22
+  - first:
+      213: -353206504177339174
+    second: Blue Sprite Sheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 614
+        width: 237
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d80d78bbcc1b780800000000000000
+      internalID: -8668922701901951622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 610
+        width: 132
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2a0bec397b49970800000000000000
+      internalID: 8760829020598215388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 609
+        width: 158
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f56bf591e371daa0800000000000000
+      internalID: -6137997404408158729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 605
+        width: 260
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ef55df8d8a49140800000000000000
+      internalID: 4725587558935166476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 635
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dd63da71fe42b30800000000000000
+      internalID: 4261794032368672001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 644
+        width: 152
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8a0f8a458c2c2d0800000000000000
+      internalID: -3259822914325665562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 677
+        width: 161
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290799bcde978f910800000000000000
+      internalID: 1871379707402481810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 642
+        width: 152
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fc3e5e84aee5030800000000000000
+      internalID: 3485480760446799740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 362
+        width: 102
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b4093200f363930800000000000000
+      internalID: 4122551778733476702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 360
+        width: 74
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659f8051a7fff3400800000000000000
+      internalID: 306244199488485718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 358
+        width: 74
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3e9cb355071a5a0800000000000000
+      internalID: -6511800074823408663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 355
+        width: 124
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab82a077c2a882140800000000000000
+      internalID: 4695154535114090682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 382
+        width: 144
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7577b78ab3612a0800000000000000
+      internalID: -6767155795265628245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 423
+        width: 112
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5c371f015e3e270800000000000000
+      internalID: 8278712400970237427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 428
+        width: 96
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb231b1b630440b0800000000000000
+      internalID: -5745463466067285060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 380
+        width: 150
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2805045c086ceb50800000000000000
+      internalID: 6623783554113669167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 91
+        width: 72
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71ffd0036de21c10800000000000000
+      internalID: 2022940192114995581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 91
+        width: 91
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b305a03a39e777ea0800000000000000
+      internalID: -5875088016320868293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 91
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e099d8f49bc196a0800000000000000
+      internalID: -6444145751099862814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 127
+        width: 81
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90984c734c116fc10800000000000000
+      internalID: 2086875011779692809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 153
+        width: 99
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f352c72767a46b50800000000000000
+      internalID: 6585572616613024757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 139
+        width: 94
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e03e42316723c00800000000000000
+      internalID: 878894701885984308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 92
+        width: 91
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7159176669213a90800000000000000
+      internalID: -7336036798216711811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 92
+        width: 72
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4f62a4e88291bf0800000000000000
+      internalID: -353206504177339174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blue Sprite Sheet_0: -8668922701901951622
+      Blue Sprite Sheet_1: 8760829020598215388
+      Blue Sprite Sheet_10: -6511800074823408663
+      Blue Sprite Sheet_11: 4695154535114090682
+      Blue Sprite Sheet_12: -6767155795265628245
+      Blue Sprite Sheet_13: 8278712400970237427
+      Blue Sprite Sheet_14: -5745463466067285060
+      Blue Sprite Sheet_15: 6623783554113669167
+      Blue Sprite Sheet_16: 2022940192114995581
+      Blue Sprite Sheet_17: -5875088016320868293
+      Blue Sprite Sheet_18: -6444145751099862814
+      Blue Sprite Sheet_19: 2086875011779692809
+      Blue Sprite Sheet_2: -6137997404408158729
+      Blue Sprite Sheet_20: 6585572616613024757
+      Blue Sprite Sheet_21: 878894701885984308
+      Blue Sprite Sheet_22: -7336036798216711811
+      Blue Sprite Sheet_23: -353206504177339174
+      Blue Sprite Sheet_3: 4725587558935166476
+      Blue Sprite Sheet_4: 4261794032368672001
+      Blue Sprite Sheet_5: -3259822914325665562
+      Blue Sprite Sheet_6: 1871379707402481810
+      Blue Sprite Sheet_7: 3485480760446799740
+      Blue Sprite Sheet_8: 4122551778733476702
+      Blue Sprite Sheet_9: 306244199488485718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
