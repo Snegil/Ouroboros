@@ -28,7 +28,7 @@ public class PlayerLineManager : MonoBehaviour
         Mathf.Clamp(segments, 3, int.MaxValue);
 
 
-        playerManager = gameObject.GetComponent<PlayerManager>();
+        playerManager = gameObject.GetComponent<    PlayerManager>();
 
         playerOne = playerManager.GetPlayerOne();
         playerTwo = playerManager.GetPlayerTwo();
