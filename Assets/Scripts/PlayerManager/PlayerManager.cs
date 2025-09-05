@@ -3,97 +3,97 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    GameObject thatSkink;
-    GameObject otherSkink;
+    GameObject playerOne;
+    GameObject playerTwo;
+    PlayerLineManager lineManager;
+    SpriteRenderer playerManagerSpriteRenderer;
 
-    [SerializeField, Header("THE DISTANCE FOR THE SKINKS TO CONNECT!")]
-    float connectionDistance = 10f;
-    [SerializeField]
-    LayerMask layerMask;
-
-
-    ConnectedPlayers connectedPlayers;
-    PlayerManagerPosition playerManagerPosition;
     bool isJoint = true;
-    List<bool> splitAction = new();
-
+    [SerializeField, Header("THE DISTANCE FOR THE PLAYERS TO CONNECT!")]
+    float connectionDistance = 10f;
     public bool IsJoint { get { return isJoint; } }
 
+    List<bool> splitActions = new();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        thatSkink = GameObject.FindWithTag("PlayerOne");
-        otherSkink = GameObject.FindWithTag("PlayerTwo");
+        playerOne = GameObject.FindWithTag("PlayerOne");
+        playerTwo = GameObject.FindWithTag("PlayerTwo");
+        lineManager = gameObject.GetComponent<PlayerLineManager>();
+        playerManagerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        thatSkink.GetComponent<SpringJoint2D>().connectedBody = otherSkink.GetComponent<Rigidbody2D>();
-        otherSkink.GetComponent<SpringJoint2D>().connectedBody = thatSkink.GetComponent<Rigidbody2D>();
-
-        connectedPlayers = GetComponent<ConnectedPlayers>();
-
-        playerManagerPosition = gameObject.AddComponent<PlayerManagerPosition>();
-        playerManagerPosition.SetPlayerManager(this);
+        //Debug.Log(playerOne);
+        //Debug.Log(playerTwo);
     }
 
-    public GameObject GetThatSkink()
+    public GameObject GetPlayerOne()
     {
-        return thatSkink;
+        return playerOne;
     }
-    public GameObject GetOtherSkink()
+    public GameObject GetPlayerTwo()
     {
-        return otherSkink;
+        return playerTwo;
     }
-
-    // SplitSkinks once used by one of the skinks adds to a list, and checks if the list has 2 items, if so, toggle the joint state of both skinks and clear the list.
-    // If the input is cancelled, clear the list (RAN BY SPLITSKINKS.CS).
+    public Vector2 AveragePosition()
+    {
+        return (playerOne.transform.position + playerTwo.transform.position) / 2f;
+    }
+    public float DistanceBetweenPlayers()
+    {
+        return Vector2.Distance(playerOne.transform.position, playerTwo.transform.position);
+    }
+    public float DistanceBetweenCentreAndPlayerOne()
+    {
+        return Vector2.Distance(AveragePosition(), playerOne.transform.position);
+    }
+    public float DistanceBetweenCentreAndPlayerTwo()
+    {
+        return Vector2.Distance(AveragePosition(), playerTwo.transform.position);
+    }
     public void SplitAction()
     {
-        splitAction.Add(true);
-
-        if (splitAction.Count < 2)
+        splitActions.Add(true);
+        if (splitActions.Count >= 2 && isJoint)
         {
-            return;
+            SplitPlayers();
         }
-
-        if (isJoint)
+        else if (splitActions.Count >= 2 && !isJoint)
         {
-            SplitSkinks();
-        }
-        else
-        {
-            ConnectSkinks();
-        }
-        splitAction.Clear();
-    }
-
-    public void SplitSkinks()
-    {
-        isJoint = false;
-        connectedPlayers.ToggleLine();
-        thatSkink.GetComponent<SpringJoint2D>().enabled = false;
-        otherSkink.GetComponent<SpringJoint2D>().enabled = false;
-    }
-
-    public void ConnectSkinks()
-    {
-        RaycastHit2D raycastHit2D = Physics2D.Raycast(thatSkink.transform.position, (otherSkink.transform.position - thatSkink.transform.position).normalized, connectionDistance, layerMask);
-        //Debug.DrawRay(thatSkink.transform.position, (otherSkink.transform.position - thatSkink.transform.position).normalized * connectionDistance, Color.blue, 1f);
-        if (!raycastHit2D) { return; }
-        if (raycastHit2D.collider.CompareTag("PlayerTwo"))
-        {
-            isJoint = true;
-            connectedPlayers.ToggleLine();
-            thatSkink.GetComponent<SpringJoint2D>().enabled = true;
-            otherSkink.GetComponent<SpringJoint2D>().enabled = true;
+            JoinPlayers();
         }
     }
     public void ClearSplitAction()
     {
-        if (splitAction.Count <= 0) { return; }
-        splitAction.Clear();
+        splitActions.Clear();
     }
-    
-    public Vector2 AveragePosition()
+    public void SplitPlayers()
     {
-        return (thatSkink.transform.position + otherSkink.transform.position) / 2f;
+        isJoint = false;
+        playerManagerSpriteRenderer.enabled = false;
+        lineManager.ToggleLines();
+        playerOne.GetComponent<SpringJoint2D>().enabled = false;
+        playerTwo.GetComponent<SpringJoint2D>().enabled = false;
+    }
+    public void JoinPlayers()
+    {
+        RaycastHit2D[] raycastHits2D = Physics2D.RaycastAll(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized, connectionDistance);
+        Debug.DrawRay(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized * connectionDistance, Color.blue, 1f);
+        for (int i = 0; i < raycastHits2D.Length; i++)
+        {
+            if (raycastHits2D[i].collider.CompareTag("PlayerTwo"))
+            {
+                ActivateJoin();
+                return;
+            }
+        }
+    }
+    void ActivateJoin()
+    {
+        isJoint = true;
+        playerManagerSpriteRenderer.enabled = true;
+        lineManager.ToggleLines();
+        playerOne.GetComponent<SpringJoint2D>().enabled = true;
+        playerTwo.GetComponent<SpringJoint2D>().enabled = true;
     }
 }

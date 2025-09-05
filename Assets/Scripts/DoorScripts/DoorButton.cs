@@ -8,7 +8,7 @@ public class DoorButton : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.gameObject.CompareTag("PlayerOne") || !collision.gameObject.CompareTag("PlayerTwo"))
+        if (collision.gameObject.CompareTag("PlayerOne") || collision.gameObject.CompareTag("PlayerTwo"))
         {
             foreach (var door in doorToOpen)
             {
