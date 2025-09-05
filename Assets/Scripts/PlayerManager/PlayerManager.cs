@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
     GameObject playerOne;
+    GameObject playerOneTowPoint;
     GameObject playerTwo;
+    GameObject playerTwoTowPoint;
     PlayerLineManager lineManager;
     SpriteRenderer playerManagerSpriteRenderer;
 
@@ -15,14 +18,20 @@ public class PlayerManager : MonoBehaviour
 
     List<bool> splitActions = new();
 
+    quaternion originalRotation;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        originalRotation = transform.rotation;
+
         playerOne = GameObject.FindWithTag("PlayerOne");
         playerTwo = GameObject.FindWithTag("PlayerTwo");
         lineManager = gameObject.GetComponent<PlayerLineManager>();
         playerManagerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
+        
+        playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
+        playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
         //Debug.Log(playerOne);
         //Debug.Log(playerTwo);
     }
@@ -74,6 +83,8 @@ public class PlayerManager : MonoBehaviour
         lineManager.ToggleLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = false;
         playerTwo.GetComponent<SpringJoint2D>().enabled = false;
+        playerOneTowPoint.SetActive(true);
+        playerTwoTowPoint.SetActive(true);
     }
     public void JoinPlayers()
     {
@@ -91,9 +102,12 @@ public class PlayerManager : MonoBehaviour
     void ActivateJoin()
     {
         isJoint = true;
+        transform.rotation = originalRotation;
         playerManagerSpriteRenderer.enabled = true;
         lineManager.ToggleLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = true;
         playerTwo.GetComponent<SpringJoint2D>().enabled = true;
+        playerOneTowPoint.SetActive(false);
+        playerTwoTowPoint.SetActive(false);
     }
 }

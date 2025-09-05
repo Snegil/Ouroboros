@@ -106,7 +106,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -144,7 +144,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -352,8 +352,8 @@ TextureImporter:
         y: 362
         width: 102
         height: 192
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.9713859, y: 0.98409367}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,15 +521,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_16
+      name: Jump-0
       rect:
         serializedVersion: 2
         x: 95
         y: 91
         width: 72
         height: 187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7560249, y: 0.98010284}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,15 +543,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_17
+      name: Jump-1
       rect:
         serializedVersion: 2
         x: 197
         y: 91
         width: 91
         height: 172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.73633045, y: 0.975332}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -565,15 +565,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_18
+      name: Jump-2
       rect:
         serializedVersion: 2
         x: 330
         y: 91
         width: 92
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.79498523, y: 0.96463674}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -587,15 +587,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_19
+      name: Jump-3
       rect:
         serializedVersion: 2
         x: 463
         y: 127
         width: 81
         height: 136
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.76550746, y: 0.9643579}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -609,15 +609,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_20
+      name: Jump-4
       rect:
         serializedVersion: 2
         x: 593
         y: 153
         width: 99
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7655072, y: 0.956189}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -631,15 +631,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_21
+      name: Jump-5
       rect:
         serializedVersion: 2
         x: 733
         y: 139
         width: 94
         height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7487618, y: 0.96387213}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -653,15 +653,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_22
+      name: Jump-6
       rect:
         serializedVersion: 2
         x: 862
         y: 92
         width: 91
         height: 186
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6856884, y: 0.97809577}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -675,15 +675,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orange Sprite Sheet_23
+      name: Jump-7
       rect:
         serializedVersion: 2
         x: 991
         y: 92
         width: 72
         height: 187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.765508, y: 0.98010284}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -714,20 +714,20 @@ TextureImporter:
       Eye-1: 6894482811965555146
       Eye-2: -3495033618718189794
       Eye-3: 8967927834494235075
+      Jump-0: 8959405660125103182
+      Jump-1: 5843564107905690204
+      Jump-2: 4437613144196041470
+      Jump-3: -6933398211249824771
+      Jump-4: 6827045520789169104
+      Jump-5: 4325849118637944255
+      Jump-6: 2508305247925272501
+      Jump-7: 674163601533743386
       Orange Sprite Sheet_10: -232537376958999876
       Orange Sprite Sheet_11: -6114274367499021769
       Orange Sprite Sheet_12: -3932523027229517300
       Orange Sprite Sheet_13: 4163024495729455906
       Orange Sprite Sheet_14: 5695236653870533223
       Orange Sprite Sheet_15: 4352897872339037684
-      Orange Sprite Sheet_16: 8959405660125103182
-      Orange Sprite Sheet_17: 5843564107905690204
-      Orange Sprite Sheet_18: 4437613144196041470
-      Orange Sprite Sheet_19: -6933398211249824771
-      Orange Sprite Sheet_20: 6827045520789169104
-      Orange Sprite Sheet_21: 4325849118637944255
-      Orange Sprite Sheet_22: 2508305247925272501
-      Orange Sprite Sheet_23: 674163601533743386
       Orange Sprite Sheet_24: 536220571
       Orange Sprite Sheet_9: -386351910082399302
       Stand-Idle: 1985029608683110224

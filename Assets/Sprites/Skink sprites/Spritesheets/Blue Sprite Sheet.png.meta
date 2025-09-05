@@ -106,7 +106,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -144,7 +144,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -169,15 +169,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue Sprite Sheet_0
+      name: Walk-0
       rect:
         serializedVersion: 2
         x: 105
         y: 614
         width: 237
         height: 197
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.44036195, y: 0.98646384}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,15 +191,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_1
+      name: Walk-1
       rect:
         serializedVersion: 2
         x: 382
         y: 610
         width: 132
         height: 196
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4519526, y: 0.982562}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,15 +213,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_2
+      name: Walk-2
       rect:
         serializedVersion: 2
         x: 564
         y: 609
         width: 158
         height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5890078, y: 0.98220843}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,15 +235,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_3
+      name: Walk-3
       rect:
         serializedVersion: 2
         x: 759
         y: 605
         width: 260
         height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.56469494, y: 0.98079425}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_4
+      name: Eye-0
       rect:
         serializedVersion: 2
         x: 1082
@@ -265,7 +265,7 @@ TextureImporter:
         width: 152
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,7 +279,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_5
+      name: Eye-1
       rect:
         serializedVersion: 2
         x: 1260
@@ -287,7 +287,7 @@ TextureImporter:
         width: 152
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,7 +301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_6
+      name: Eye-2
       rect:
         serializedVersion: 2
         x: 1433
@@ -309,7 +309,7 @@ TextureImporter:
         width: 161
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,7 +323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_7
+      name: Eye-3
       rect:
         serializedVersion: 2
         x: 1621
@@ -331,7 +331,7 @@ TextureImporter:
         width: 152
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -345,15 +345,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_8
+      name: Stand-Idle
       rect:
         serializedVersion: 2
         x: 95
         y: 362
         width: 102
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.97410387, y: 0.98431426}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -375,7 +375,7 @@ TextureImporter:
         width: 74
         height: 194
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -397,7 +397,7 @@ TextureImporter:
         width: 74
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -419,7 +419,7 @@ TextureImporter:
         width: 124
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -441,7 +441,7 @@ TextureImporter:
         width: 144
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -463,7 +463,7 @@ TextureImporter:
         width: 112
         height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -485,7 +485,7 @@ TextureImporter:
         width: 96
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -507,7 +507,7 @@ TextureImporter:
         width: 150
         height: 175
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,15 +521,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_16
+      name: Jump-0
       rect:
         serializedVersion: 2
         x: 95
         y: 91
         width: 72
         height: 187
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.74447125, y: 0.9789445}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,15 +543,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_17
+      name: Jump-1
       rect:
         serializedVersion: 2
         x: 197
         y: 91
         width: 91
         height: 172
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.7275619, y: 0.9740595}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -565,15 +565,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_18
+      name: Jump-2
       rect:
         serializedVersion: 2
         x: 330
         y: 91
         width: 92
         height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.78698766, y: 0.9630566}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -587,15 +587,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_19
+      name: Jump-3
       rect:
         serializedVersion: 2
         x: 463
         y: 127
         width: 81
         height: 136
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.76843864, y: 0.96441025}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -609,15 +609,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_20
+      name: Jump-4
       rect:
         serializedVersion: 2
         x: 593
         y: 153
         width: 99
         height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.75885195, y: 0.95416677}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -631,15 +631,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_21
+      name: Jump-5
       rect:
         serializedVersion: 2
         x: 733
         y: 139
         width: 94
         height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.7478371, y: 0.9655154}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -653,15 +653,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_22
+      name: Jump-6
       rect:
         serializedVersion: 2
         x: 862
         y: 92
         width: 91
         height: 186
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.68204975, y: 0.9801278}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -675,15 +675,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blue Sprite Sheet_23
+      name: Jump-7
       rect:
         serializedVersion: 2
         x: 991
         y: 92
         width: 72
         height: 187
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.74806553, y: 0.9803289}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -700,7 +700,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a2ff0a5667d1e674aa971e927eef21b5
     internalID: 0
     vertices: []
     indices: 
@@ -710,30 +710,30 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blue Sprite Sheet_0: -8668922701901951622
-      Blue Sprite Sheet_1: 8760829020598215388
       Blue Sprite Sheet_10: -6511800074823408663
       Blue Sprite Sheet_11: 4695154535114090682
       Blue Sprite Sheet_12: -6767155795265628245
       Blue Sprite Sheet_13: 8278712400970237427
       Blue Sprite Sheet_14: -5745463466067285060
       Blue Sprite Sheet_15: 6623783554113669167
-      Blue Sprite Sheet_16: 2022940192114995581
-      Blue Sprite Sheet_17: -5875088016320868293
-      Blue Sprite Sheet_18: -6444145751099862814
-      Blue Sprite Sheet_19: 2086875011779692809
-      Blue Sprite Sheet_2: -6137997404408158729
-      Blue Sprite Sheet_20: 6585572616613024757
-      Blue Sprite Sheet_21: 878894701885984308
-      Blue Sprite Sheet_22: -7336036798216711811
-      Blue Sprite Sheet_23: -353206504177339174
-      Blue Sprite Sheet_3: 4725587558935166476
-      Blue Sprite Sheet_4: 4261794032368672001
-      Blue Sprite Sheet_5: -3259822914325665562
-      Blue Sprite Sheet_6: 1871379707402481810
-      Blue Sprite Sheet_7: 3485480760446799740
-      Blue Sprite Sheet_8: 4122551778733476702
       Blue Sprite Sheet_9: 306244199488485718
+      Eye-0: 4261794032368672001
+      Eye-1: -3259822914325665562
+      Eye-2: 1871379707402481810
+      Eye-3: 3485480760446799740
+      Jump-0: 2022940192114995581
+      Jump-1: -5875088016320868293
+      Jump-2: -6444145751099862814
+      Jump-3: 2086875011779692809
+      Jump-4: 6585572616613024757
+      Jump-5: 878894701885984308
+      Jump-6: -7336036798216711811
+      Jump-7: -353206504177339174
+      Stand-Idle: 4122551778733476702
+      Walk-0: -8668922701901951622
+      Walk-1: 8760829020598215388
+      Walk-2: -6137997404408158729
+      Walk-3: 4725587558935166476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

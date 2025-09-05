@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
     float movementSpeed = 5f;
 
     Vector2 input;
+
+    [SerializeField]
+    Animator animator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving)
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
+            animator.SetBool("Walking", true);
         }        
     }
     public void Movement(InputAction.CallbackContext context)
@@ -31,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.canceled)
         {
             isMoving = false;
+            animator.SetBool("Walking", false);
             rb2d.linearVelocityX = 0;
             return;
         }

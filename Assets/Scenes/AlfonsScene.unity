@@ -1896,7 +1896,7 @@ PrefabInstance:
       objectReference: {fileID: 1920593020}
     - target: {fileID: 2339612582525937782, guid: cfba8dab7147a174dab79ead98156739, type: 3}
       propertyPath: m_Name
-      value: PlayerTwo
+      value: PlayerTwo-Blue
       objectReference: {fileID: 0}
     - target: {fileID: 5652543407299268507, guid: cfba8dab7147a174dab79ead98156739, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1969,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2239760785191867439, guid: b799ef058cc53ec44a50b6dc91e94387, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.394
+      value: 3.4493
       objectReference: {fileID: 0}
     - target: {fileID: 2239760785191867439, guid: b799ef058cc53ec44a50b6dc91e94387, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2062,7 +2062,7 @@ PrefabInstance:
       objectReference: {fileID: 1920593020}
     - target: {fileID: 7328482017436306155, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
       propertyPath: m_Name
-      value: PlayerOne
+      value: PlayerOne-Orange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
