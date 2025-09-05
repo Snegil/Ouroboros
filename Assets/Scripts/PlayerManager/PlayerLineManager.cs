@@ -13,6 +13,7 @@ public class PlayerLineManager : MonoBehaviour
     GameObject playerTwoAttachment;
     LineRenderer playerTwoLineRenderer;
 
+
     [SerializeField]
     int segments = 3;
     [SerializeField]
@@ -25,6 +26,9 @@ public class PlayerLineManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+
+
         Mathf.Clamp(segments, 3, int.MaxValue);
 
 
@@ -32,8 +36,6 @@ public class PlayerLineManager : MonoBehaviour
 
         playerOne = playerManager.GetPlayerOne();
         playerTwo = playerManager.GetPlayerTwo();
-        playerOneAttachment = playerOne.transform.GetChild(0).gameObject;
-        playerTwoAttachment = playerTwo.transform.GetChild(0).gameObject;
 
         playerOneLineRenderer = playerOne.GetComponentInChildren<LineRenderer>();
         playerTwoLineRenderer = playerTwo.GetComponentInChildren<LineRenderer>();

@@ -21,6 +21,9 @@ public class PlayerJump : MonoBehaviour
 
     RaycastHit2D hit;
 
+    [SerializeField]
+    Animator animator;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -28,7 +31,7 @@ public class PlayerJump : MonoBehaviour
     }
     void Update()
     {
-
+        /*
         if (!startCoyoteTime) { return; }
 
         coyoteTime -= Time.deltaTime;
@@ -43,6 +46,7 @@ public class PlayerJump : MonoBehaviour
                 coyoteTime = setCoyoteTime;
             }
         }
+        */
     }
     public void Jump(InputAction.CallbackContext context)
     {
@@ -52,11 +56,7 @@ public class PlayerJump : MonoBehaviour
         if (context.started && hit.collider != null)
         {
             Jumping();
-        }
-        if (context.started && hit.collider == null)
-        {
-            coyoteTime = setCoyoteTime;
-            startCoyoteTime = true;           
+            animator.SetTrigger("Jump");
         }
     }
 
