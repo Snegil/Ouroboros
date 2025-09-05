@@ -62,7 +62,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.09433961, g: 0.087664634, b: 0.087664634, a: 0}
+    - _OutlineColor: {r: 0.36078432, g: 0.04705883, b: 0, a: 1}
     - _PixelCount: {r: 384, g: 216, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
