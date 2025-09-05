@@ -19,10 +19,16 @@ public class PlayerManager : MonoBehaviour
     List<bool> splitActions = new();
 
     quaternion originalRotation;
+
+    [Space, SerializeField, Header("Tolerance of rotating the playermanager sprite to fit the players linerenderer.")]
+    float rotation = 100f;
+    SpriteRenderer spriteRenderer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         originalRotation = transform.rotation;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         playerOne = GameObject.FindWithTag("PlayerOne");
         playerTwo = GameObject.FindWithTag("PlayerTwo");
@@ -34,6 +40,17 @@ public class PlayerManager : MonoBehaviour
         playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
         //Debug.Log(playerOne);
         //Debug.Log(playerTwo);
+    }
+    void Update()
+    {
+        if (playerOne.transform.position.x < playerTwo.transform.position.x)
+        {
+            spriteRenderer.flipY = false;
+        }
+        else
+        {
+            spriteRenderer.flipY = true;
+        }
     }
 
     public GameObject GetPlayerOne()
