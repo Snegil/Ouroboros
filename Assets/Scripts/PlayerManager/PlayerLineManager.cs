@@ -83,11 +83,17 @@ public class PlayerLineManager : MonoBehaviour
         return u * u * a + 2 * u * t * b + t * t * c;
     }
 
-    public void ToggleLines()
+    public void EnableLines()
     {
-        playerOneLineRenderer.positionCount = playerOneLineRenderer.positionCount == 0 ? segments : 0;
-        playerTwoLineRenderer.positionCount = playerTwoLineRenderer.positionCount == 0 ? segments : 0;
+        playerOneLineRenderer.positionCount = segments;
+        playerTwoLineRenderer.positionCount = segments;
     }
+    public void DisableLines()
+    {
+        playerOneLineRenderer.positionCount = 0;
+        playerTwoLineRenderer.positionCount = 0;
+    }
+
     public void FlipLineRenderer(Vector3 playerOnePosition, Vector3 playerTwoPosition)
     {
         if (playerOnePosition.x < playerTwoPosition.x)
