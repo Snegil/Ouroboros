@@ -26,13 +26,10 @@ public class PlayerLineManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-
-
         Mathf.Clamp(segments, 3, int.MaxValue);
 
 
-        playerManager = gameObject.GetComponent<    PlayerManager>();
+        playerManager = gameObject.GetComponent<PlayerManager>();
 
         playerOne = playerManager.GetPlayerOne();
         playerTwo = playerManager.GetPlayerTwo();
@@ -77,7 +74,7 @@ public class PlayerLineManager : MonoBehaviour
             point.z = 0f;
             playerTwoLineRenderer.SetPosition(i, point);
         }
-
+        FlipLineRenderer(playerOnePosition, playerTwoPosition);
     }
 
     Vector3 CalculateQuadraticBezierPoint(float t, Vector3 a, Vector3 b, Vector3 c)
@@ -90,6 +87,19 @@ public class PlayerLineManager : MonoBehaviour
     {
         playerOneLineRenderer.positionCount = playerOneLineRenderer.positionCount == 0 ? segments : 0;
         playerTwoLineRenderer.positionCount = playerTwoLineRenderer.positionCount == 0 ? segments : 0;
+    }
+    public void FlipLineRenderer(Vector3 playerOnePosition, Vector3 playerTwoPosition)
+    {
+        if (playerOnePosition.x < playerTwoPosition.x)
+        {
+            playerOneLineRenderer.textureScale = new Vector2(1, -1);
+            playerTwoLineRenderer.textureScale = new Vector2(1, 1);
+        }
+        else
+        {
+            playerOneLineRenderer.textureScale = new Vector2(1, 1);
+            playerTwoLineRenderer.textureScale = new Vector2(1, -1);
+        }
     }
 }
         
