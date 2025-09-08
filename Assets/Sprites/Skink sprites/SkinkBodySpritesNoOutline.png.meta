@@ -121,10 +121,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 468
-        width: 170
-        height: 115
+        x: 52
+        y: 469
+        width: 168
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_1
       rect:
         serializedVersion: 2
-        x: 273
-        y: 454
-        width: 197
-        height: 142
+        x: 274
+        y: 455
+        width: 195
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_2
       rect:
         serializedVersion: 2
-        x: 539
-        y: 458
-        width: 98
-        height: 139
+        x: 543
+        y: 459
+        width: 96
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_3
       rect:
         serializedVersion: 2
-        x: 714
-        y: 453
-        width: 198
-        height: 144
+        x: 715
+        y: 454
+        width: 196
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_4
       rect:
         serializedVersion: 2
-        x: 965
-        y: 455
-        width: 175
-        height: 142
+        x: 952
+        y: 456
+        width: 173
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_5
       rect:
         serializedVersion: 2
-        x: 315
-        y: 102
-        width: 246
-        height: 129
+        x: 316
+        y: 103
+        width: 244
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: SkinkBodySpritesNoOutline_6
       rect:
         serializedVersion: 2
-        x: 679
-        y: 114
-        width: 245
-        height: 116
+        x: 680
+        y: 115
+        width: 243
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 78fb3d9a9384c4e4ea5791e15fe0663c
     internalID: 0
     vertices: []
     indices: 
