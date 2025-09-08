@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: b48868044c497ea4583b995b33989de2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6861801488173487483
+    second: UPDATED Body Sprite Sheet_0
+  - first:
+      213: 6988780016255070170
+    second: UPDATED Body Sprite Sheet_1
+  - first:
+      213: 2485005656487470591
+    second: UPDATED Body Sprite Sheet_2
+  - first:
+      213: 8920519438125915461
+    second: UPDATED Body Sprite Sheet_3
+  - first:
+      213: 7509615668834120411
+    second: UPDATED Body Sprite Sheet_4
+  - first:
+      213: 1884578510980910572
+    second: UPDATED Body Sprite Sheet_5
+  - first:
+      213: -7037883796349479092
+    second: UPDATED Body Sprite Sheet_6
+  - first:
+      213: -3256945820921483851
+    second: UPDATED Body Sprite Sheet_7
+  - first:
+      213: 8966669260993501278
+    second: UPDATED Body Sprite Sheet_8
+  - first:
+      213: 2083998056673389143
+    second: UPDATED Body Sprite Sheet_9
+  - first:
+      213: 4367943151957641371
+    second: UPDATED Body Sprite Sheet_10
+  - first:
+      213: -9011958312067836817
+    second: UPDATED Body Sprite Sheet_11
+  - first:
+      213: 7022307556376858538
+    second: UPDATED Body Sprite Sheet_12
+  - first:
+      213: -1590861585743041507
+    second: UPDATED Body Sprite Sheet_13
+  - first:
+      213: 571548957207685811
+    second: UPDATED Body Sprite Sheet_14
+  - first:
+      213: -3878180462962708388
+    second: UPDATED Body Sprite Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 806
+        width: 814
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a2c22e6ebf5c0a0800000000000000
+      internalID: -6861801488173487483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 587
+        width: 168
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf6b3a85622df060800000000000000
+      internalID: 6988780016255070170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 586
+        width: 195
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5a5cb7a738c7220800000000000000
+      internalID: 2485005656487470591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 586
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d56718a2d0ccb70800000000000000
+      internalID: 8920519438125915461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 585
+        width: 196
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2b094c9a3873860800000000000000
+      internalID: 7509615668834120411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 586
+        width: 173
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced0a5abb2e572a10800000000000000
+      internalID: 1884578510980910572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-R
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 413
+        width: 173
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b980983872d0e9c30800000000000000
+      internalID: 4367943151957641371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 226
+        width: 316
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64519e99a71fe280800000000000000
+      internalID: -9011958312067836817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 228
+        width: 249
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf4269448f347160800000000000000
+      internalID: 7022307556376858538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Body Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 227
+        width: 243
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ca8f601df1ce9e0800000000000000
+      internalID: -1590861585743041507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-LONG-L
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 51
+        width: 243
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3baeb169fbc8ee700800000000000000
+      internalID: 571548957207685811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-LONG-R
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 50
+        width: 243
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c507f3a9a6fed2ac0800000000000000
+      internalID: -3878180462962708388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-L
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 414
+        width: 168
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411ef6372e46bc040acdd48025662d4e
+      internalID: 1626055652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-ML
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 413
+        width: 195
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e175da239a4d75344a62b6759c4087cb
+      internalID: -417980974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-M
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 413
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74786388d976d7f4192ddfd31f6589ab
+      internalID: -268285790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-MR
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 412
+        width: 196
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc00b02e21261c4d9083ab01281d49b
+      internalID: 945769778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a2af8fd87c6077e42bb7731958af0305
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Skink-L: 1626055652
+      Skink-LONG-L: 571548957207685811
+      Skink-LONG-R: -3878180462962708388
+      Skink-M: -268285790
+      Skink-ML: -417980974
+      Skink-MR: 945769778
+      Skink-R: 4367943151957641371
+      UPDATED Body Sprite Sheet_0: -6861801488173487483
+      UPDATED Body Sprite Sheet_1: 6988780016255070170
+      UPDATED Body Sprite Sheet_11: -9011958312067836817
+      UPDATED Body Sprite Sheet_12: 7022307556376858538
+      UPDATED Body Sprite Sheet_13: -1590861585743041507
+      UPDATED Body Sprite Sheet_2: 2485005656487470591
+      UPDATED Body Sprite Sheet_3: 8920519438125915461
+      UPDATED Body Sprite Sheet_4: 7509615668834120411
+      UPDATED Body Sprite Sheet_5: 1884578510980910572
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

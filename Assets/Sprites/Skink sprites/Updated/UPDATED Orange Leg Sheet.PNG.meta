@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: cc3f4beaf913efa47b42732fa0dcd5dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7645938826208374562
+    second: UPDATED Orange Leg Sheet_0
+  - first:
+      213: -2076068862088043036
+    second: UPDATED Orange Leg Sheet_1
+  - first:
+      213: -8746997106537390152
+    second: UPDATED Orange Leg Sheet_2
+  - first:
+      213: 699674464428589148
+    second: UPDATED Orange Leg Sheet_3
+  - first:
+      213: -677082429685551058
+    second: UPDATED Orange Leg Sheet_4
+  - first:
+      213: -1779043161184255666
+    second: UPDATED Orange Leg Sheet_5
+  - first:
+      213: -917419175313826600
+    second: UPDATED Orange Leg Sheet_6
+  - first:
+      213: 4096043100276448031
+    second: UPDATED Orange Leg Sheet_7
+  - first:
+      213: -2864329857294630654
+    second: UPDATED Orange Leg Sheet_8
+  - first:
+      213: 2787316474679443061
+    second: UPDATED Orange Leg Sheet_9
+  - first:
+      213: 3939858704938858250
+    second: UPDATED Orange Leg Sheet_10
+  - first:
+      213: -65956691505860977
+    second: UPDATED Orange Leg Sheet_11
+  - first:
+      213: 1655123738108260494
+    second: UPDATED Orange Leg Sheet_12
+  - first:
+      213: -7726530522135612914
+    second: UPDATED Orange Leg Sheet_13
+  - first:
+      213: 2509876150871744499
+    second: UPDATED Orange Leg Sheet_14
+  - first:
+      213: 6704396373723982742
+    second: UPDATED Orange Leg Sheet_15
+  - first:
+      213: 6343542948132820590
+    second: UPDATED Orange Leg Sheet_16
+  - first:
+      213: -8222226961170102744
+    second: UPDATED Orange Leg Sheet_17
+  - first:
+      213: -4574063688894798530
+    second: UPDATED Orange Leg Sheet_18
+  - first:
+      213: -7157498498550226103
+    second: UPDATED Orange Leg Sheet_19
+  - first:
+      213: -7674918891564707056
+    second: UPDATED Orange Leg Sheet_20
+  - first:
+      213: 6209067471370292499
+    second: UPDATED Orange Leg Sheet_21
+  - first:
+      213: -9080377349172510014
+    second: UPDATED Orange Leg Sheet_22
+  - first:
+      213: -6457280154082835456
+    second: UPDATED Orange Leg Sheet_23
+  - first:
+      213: 7799478489256499406
+    second: UPDATED Orange Leg Sheet_24
+  - first:
+      213: -413356812369853315
+    second: UPDATED Orange Leg Sheet_25
+  - first:
+      213: 4238915440336576468
+    second: UPDATED Orange Leg Sheet_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 844
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 605
+        width: 255
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f648e3ad4db1a60800000000000000
+      internalID: 7645938826208374562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 601
+        width: 149
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e52ef19e525033e0800000000000000
+      internalID: -2076068862088043036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 600
+        width: 176
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf1875a97c6c9680800000000000000
+      internalID: -8746997106537390152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 596
+        width: 277
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c508da6e73eb5b900800000000000000
+      internalID: 699674464428589148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 601
+        width: 255
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e203fe61e158a96f0800000000000000
+      internalID: -677082429685551058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 597
+        width: 149
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e414681bba19f47e0800000000000000
+      internalID: -1779043161184255666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 596
+        width: 176
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc9949ee1ca443f0800000000000000
+      internalID: -917419175313826600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 353
+        width: 120
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bdaa87f7118d830800000000000000
+      internalID: 4096043100276448031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 351
+        width: 92
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2018860bb2bdf38d0800000000000000
+      internalID: -2864329857294630654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 349
+        width: 92
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ebcddd0998ea620800000000000000
+      internalID: 2787316474679443061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 346
+        width: 142
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a077c1d2e903da630800000000000000
+      internalID: 3939858704938858250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 374
+        width: 162
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8eab301dbca51ff0800000000000000
+      internalID: -65956691505860977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 415
+        width: 129
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e807245454e28f610800000000000000
+      internalID: 1655123738108260494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 420
+        width: 114
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02b4e15d69d5c490800000000000000
+      internalID: -7726530522135612914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 372
+        width: 167
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff5fe2bf0fd4d220800000000000000
+      internalID: 2509876150871744499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 364
+        width: 109
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b2c310bfcca0d50800000000000000
+      internalID: 6704396373723982742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 364
+        width: 277
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6614e8a3bac80850800000000000000
+      internalID: 6343542948132820590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 82
+        width: 90
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82601dc5428c4ed80800000000000000
+      internalID: -8222226961170102744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 123
+        width: 99
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35a9633f49a580c0800000000000000
+      internalID: -4574063688894798530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 149
+        width: 117
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943a581a9057bac90800000000000000
+      internalID: -7157498498550226103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 134
+        width: 111
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013d95c7ee53d7590800000000000000
+      internalID: -7674918891564707056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 87
+        width: 109
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d8579d7f90b2650800000000000000
+      internalID: 6209067471370292499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 87
+        width: 90
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2c11c29e40cf180800000000000000
+      internalID: -9080377349172510014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 132
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00486b879e12366a0800000000000000
+      internalID: -6457280154082835456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 141
+        width: 152
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec81f61dc505d3c60800000000000000
+      internalID: 7799478489256499406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 174
+        width: 161
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7405315b26734af0800000000000000
+      internalID: -413356812369853315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Orange Leg Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 139
+        width: 152
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df1e2e5227a3da30800000000000000
+      internalID: 4238915440336576468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UPDATED Orange Leg Sheet_0: 7645938826208374562
+      UPDATED Orange Leg Sheet_1: -2076068862088043036
+      UPDATED Orange Leg Sheet_10: 3939858704938858250
+      UPDATED Orange Leg Sheet_11: -65956691505860977
+      UPDATED Orange Leg Sheet_12: 1655123738108260494
+      UPDATED Orange Leg Sheet_13: -7726530522135612914
+      UPDATED Orange Leg Sheet_14: 2509876150871744499
+      UPDATED Orange Leg Sheet_15: 6704396373723982742
+      UPDATED Orange Leg Sheet_16: 6343542948132820590
+      UPDATED Orange Leg Sheet_17: -8222226961170102744
+      UPDATED Orange Leg Sheet_18: -4574063688894798530
+      UPDATED Orange Leg Sheet_19: -7157498498550226103
+      UPDATED Orange Leg Sheet_2: -8746997106537390152
+      UPDATED Orange Leg Sheet_20: -7674918891564707056
+      UPDATED Orange Leg Sheet_21: 6209067471370292499
+      UPDATED Orange Leg Sheet_22: -9080377349172510014
+      UPDATED Orange Leg Sheet_23: -6457280154082835456
+      UPDATED Orange Leg Sheet_24: 7799478489256499406
+      UPDATED Orange Leg Sheet_25: -413356812369853315
+      UPDATED Orange Leg Sheet_26: 4238915440336576468
+      UPDATED Orange Leg Sheet_3: 699674464428589148
+      UPDATED Orange Leg Sheet_4: -677082429685551058
+      UPDATED Orange Leg Sheet_5: -1779043161184255666
+      UPDATED Orange Leg Sheet_6: -917419175313826600
+      UPDATED Orange Leg Sheet_7: 4096043100276448031
+      UPDATED Orange Leg Sheet_8: -2864329857294630654
+      UPDATED Orange Leg Sheet_9: 2787316474679443061
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

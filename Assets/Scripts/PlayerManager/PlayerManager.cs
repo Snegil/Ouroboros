@@ -43,11 +43,11 @@ public class PlayerManager : MonoBehaviour
     {
         if (playerOne.transform.position.x < playerTwo.transform.position.x)
         {
-            spriteRenderer.flipY = false;
+            spriteRenderer.flipY = true;
         }
         else
         {
-            spriteRenderer.flipY = true;
+            spriteRenderer.flipY = false;
         }
     }
 

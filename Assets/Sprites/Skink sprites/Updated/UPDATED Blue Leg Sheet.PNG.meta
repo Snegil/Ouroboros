@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 9c9284cb2deadcb49bcdd3a919b7e908
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 209019781657764099
+    second: UPDATED Blue Leg Sheet_0
+  - first:
+      213: -7921334346219168527
+    second: UPDATED Blue Leg Sheet_1
+  - first:
+      213: 7635391542311346142
+    second: UPDATED Blue Leg Sheet_2
+  - first:
+      213: 6491310140625712855
+    second: UPDATED Blue Leg Sheet_3
+  - first:
+      213: 8635061768727568221
+    second: UPDATED Blue Leg Sheet_4
+  - first:
+      213: -5376445375531910886
+    second: UPDATED Blue Leg Sheet_5
+  - first:
+      213: -8738095186895787876
+    second: UPDATED Blue Leg Sheet_6
+  - first:
+      213: 5434067735654702099
+    second: UPDATED Blue Leg Sheet_7
+  - first:
+      213: -5100087639675549261
+    second: UPDATED Blue Leg Sheet_8
+  - first:
+      213: -8425063147772289734
+    second: UPDATED Blue Leg Sheet_9
+  - first:
+      213: -5025600658695015718
+    second: UPDATED Blue Leg Sheet_10
+  - first:
+      213: -5651853812497465305
+    second: UPDATED Blue Leg Sheet_11
+  - first:
+      213: -2171907973163385680
+    second: UPDATED Blue Leg Sheet_12
+  - first:
+      213: -3742784887216376428
+    second: UPDATED Blue Leg Sheet_13
+  - first:
+      213: 6963456858036833189
+    second: UPDATED Blue Leg Sheet_14
+  - first:
+      213: 7486654174358512362
+    second: UPDATED Blue Leg Sheet_15
+  - first:
+      213: 5512239957665733747
+    second: UPDATED Blue Leg Sheet_16
+  - first:
+      213: -1124895731556258395
+    second: UPDATED Blue Leg Sheet_17
+  - first:
+      213: 5894052734265434782
+    second: UPDATED Blue Leg Sheet_18
+  - first:
+      213: 1614846854400921378
+    second: UPDATED Blue Leg Sheet_19
+  - first:
+      213: -8573635535439207104
+    second: UPDATED Blue Leg Sheet_20
+  - first:
+      213: 8072530101920934967
+    second: UPDATED Blue Leg Sheet_21
+  - first:
+      213: -7342773442328008055
+    second: UPDATED Blue Leg Sheet_22
+  - first:
+      213: -6046271502612570591
+    second: UPDATED Blue Leg Sheet_23
+  - first:
+      213: 5870040600109772808
+    second: UPDATED Blue Leg Sheet_24
+  - first:
+      213: 3399311716272151931
+    second: UPDATED Blue Leg Sheet_25
+  - first:
+      213: -7740706973109129161
+    second: UPDATED Blue Leg Sheet_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 844
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 605
+        width: 255
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301adbc426696e200800000000000000
+      internalID: 209019781657764099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 601
+        width: 149
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc51829164c11290800000000000000
+      internalID: -7921334346219168527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 600
+        width: 176
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf5d78572c56f960800000000000000
+      internalID: 7635391542311346142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 596
+        width: 277
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6f2e23e24c51a50800000000000000
+      internalID: 6491310140625712855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 601
+        width: 255
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f109a9de6e5d770800000000000000
+      internalID: 8635061768727568221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 597
+        width: 149
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19f025aa670365b0800000000000000
+      internalID: -5376445375531910886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 596
+        width: 176
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98a68359bc0cb680800000000000000
+      internalID: -8738095186895787876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 353
+        width: 120
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c1c1d80dfa96b40800000000000000
+      internalID: 5434067735654702099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 351
+        width: 92
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b947c92059d839b0800000000000000
+      internalID: -5100087639675549261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 349
+        width: 92
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d5cca74b9241b80800000000000000
+      internalID: -8425063147772289734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 346
+        width: 142
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2b383e3da714ab0800000000000000
+      internalID: -5025600658695015718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 374
+        width: 162
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720c6aff6e49091b0800000000000000
+      internalID: -5651853812497465305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 415
+        width: 129
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcf1c6a435dbd1e0800000000000000
+      internalID: -2171907973163385680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 420
+        width: 114
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49574c6a9f4fe0cc0800000000000000
+      internalID: -3742784887216376428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 372
+        width: 167
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab0b005e1b23a060800000000000000
+      internalID: 6963456858036833189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 364
+        width: 109
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae2a5da3e40f5e760800000000000000
+      internalID: 7486654174358512362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 364
+        width: 277
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c516159096f7c40800000000000000
+      internalID: 5512239957665733747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 82
+        width: 90
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad6c37ca419360f0800000000000000
+      internalID: -1124895731556258395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 123
+        width: 99
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92af49dbb1ebc150800000000000000
+      internalID: 5894052734265434782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 149
+        width: 117
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f493388a6196610800000000000000
+      internalID: 1614846854400921378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 134
+        width: 111
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045ea74d7e3540980800000000000000
+      internalID: -8573635535439207104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 87
+        width: 109
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c25ab8b53670070800000000000000
+      internalID: 8072530101920934967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 87
+        width: 90
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98aedd7357a391a90800000000000000
+      internalID: -7342773442328008055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 132
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ed5375a14571ca0800000000000000
+      internalID: -6046271502612570591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 141
+        width: 152
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800f9a233d2967150800000000000000
+      internalID: 5870040600109772808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 174
+        width: 161
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d9931eef7cc2f20800000000000000
+      internalID: 3399311716272151931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UPDATED Blue Leg Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 139
+        width: 152
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730f07d150c739490800000000000000
+      internalID: -7740706973109129161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UPDATED Blue Leg Sheet_0: 209019781657764099
+      UPDATED Blue Leg Sheet_1: -7921334346219168527
+      UPDATED Blue Leg Sheet_10: -5025600658695015718
+      UPDATED Blue Leg Sheet_11: -5651853812497465305
+      UPDATED Blue Leg Sheet_12: -2171907973163385680
+      UPDATED Blue Leg Sheet_13: -3742784887216376428
+      UPDATED Blue Leg Sheet_14: 6963456858036833189
+      UPDATED Blue Leg Sheet_15: 7486654174358512362
+      UPDATED Blue Leg Sheet_16: 5512239957665733747
+      UPDATED Blue Leg Sheet_17: -1124895731556258395
+      UPDATED Blue Leg Sheet_18: 5894052734265434782
+      UPDATED Blue Leg Sheet_19: 1614846854400921378
+      UPDATED Blue Leg Sheet_2: 7635391542311346142
+      UPDATED Blue Leg Sheet_20: -8573635535439207104
+      UPDATED Blue Leg Sheet_21: 8072530101920934967
+      UPDATED Blue Leg Sheet_22: -7342773442328008055
+      UPDATED Blue Leg Sheet_23: -6046271502612570591
+      UPDATED Blue Leg Sheet_24: 5870040600109772808
+      UPDATED Blue Leg Sheet_25: 3399311716272151931
+      UPDATED Blue Leg Sheet_26: -7740706973109129161
+      UPDATED Blue Leg Sheet_3: 6491310140625712855
+      UPDATED Blue Leg Sheet_4: 8635061768727568221
+      UPDATED Blue Leg Sheet_5: -5376445375531910886
+      UPDATED Blue Leg Sheet_6: -8738095186895787876
+      UPDATED Blue Leg Sheet_7: 5434067735654702099
+      UPDATED Blue Leg Sheet_8: -5100087639675549261
+      UPDATED Blue Leg Sheet_9: -8425063147772289734
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
