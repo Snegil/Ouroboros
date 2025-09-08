@@ -20,8 +20,6 @@ public class PlayerManager : MonoBehaviour
 
     quaternion originalRotation;
 
-    [Space, SerializeField, Header("Tolerance of rotating the playermanager sprite to fit the players linerenderer.")]
-    float rotation = 100f;
     SpriteRenderer spriteRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,7 +33,7 @@ public class PlayerManager : MonoBehaviour
         lineManager = gameObject.GetComponent<PlayerLineManager>();
         playerManagerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        
+
         playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
         playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
         //Debug.Log(playerOne);
@@ -97,7 +95,7 @@ public class PlayerManager : MonoBehaviour
     {
         isJoint = false;
         playerManagerSpriteRenderer.enabled = false;
-        lineManager.ToggleLines();
+        lineManager.DisableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = false;
         playerTwo.GetComponent<SpringJoint2D>().enabled = false;
         playerOneTowPoint.SetActive(true);
@@ -121,10 +119,27 @@ public class PlayerManager : MonoBehaviour
         isJoint = true;
         transform.rotation = originalRotation;
         playerManagerSpriteRenderer.enabled = true;
-        lineManager.ToggleLines();
+        lineManager.EnableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = true;
         playerTwo.GetComponent<SpringJoint2D>().enabled = true;
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
+    }
+    public void HazardSplit(Vector3 hazardLocation, float explosiveForceAmount, float upwardForce)
+    {
+        if (isJoint)
+        {
+            SplitPlayers();
+            ExplosiveForce(hazardLocation, explosiveForceAmount, upwardForce);
+        }
+    }
+    public void ExplosiveForce(Vector3 hazardlocation, float explosiveForceAmount, float upwardForce)
+    {
+        Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation).normalized;
+        Vector2 directionToPlayerTwo = (playerTwo.transform.position - hazardlocation).normalized;
+        directionToPlayerOne.y = upwardForce;
+        directionToPlayerTwo.y = upwardForce;
+        playerOne.GetComponent<Rigidbody2D>().AddForce(directionToPlayerOne * explosiveForceAmount, ForceMode2D.Impulse);
+        playerTwo.GetComponent<Rigidbody2D>().AddForce(directionToPlayerTwo * explosiveForceAmount, ForceMode2D.Impulse);
     }
 }

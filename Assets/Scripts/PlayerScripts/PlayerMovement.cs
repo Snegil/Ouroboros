@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isMoving = false;
             animator.SetBool("Walking", false);
-            rb2d.linearVelocityX = 0;
+            //rb2d.linearVelocityX = 0;
             return;
         }
         if (context.started)
