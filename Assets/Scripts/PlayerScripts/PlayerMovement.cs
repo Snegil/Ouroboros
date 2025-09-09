@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.right, wallCheckDistance, layerMask);
-        Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
+        //Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
 
         if (hit.collider != null && Vector2.Dot(hit.normal, rb2d.linearVelocity) < 0)
         {
@@ -55,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving && hit.collider == null)
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
-            //gameObject.transform.GetChild(0).localPosition = 
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
         }
