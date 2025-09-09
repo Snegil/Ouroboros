@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving && hit.collider == null)
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
+            //gameObject.transform.GetChild(0).localPosition = 
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
         }
