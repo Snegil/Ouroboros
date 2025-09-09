@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -130,14 +129,26 @@ public class PlayerManager : MonoBehaviour
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
     }
-    public void HazardSplit(Vector3 hazardLocation, float explosiveForceAmount, float upwardForce)
+    public void HazardSplit(Vector3 hazardLocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
     {
-        if (isJoint)
+        if (affectedParty == gameObject)
         {
             SplitPlayers();
             ExplosiveForce(hazardLocation, explosiveForceAmount, upwardForce);
+            playerOne.GetComponent<PlayerMovement>().ActivateStunTimer();
+            playerTwo.GetComponent<PlayerMovement>().ActivateStunTimer();
+            return;
         }
+
+        if (affectedParty == null)
+        {
+            return;
+        }
+
+        LimitedExplosiveForce(hazardLocation, explosiveForceAmount, upwardForce, affectedParty);
+        affectedParty.GetComponent<PlayerMovement>().ActivateStunTimer();
     }
+
     public void ExplosiveForce(Vector3 hazardlocation, float explosiveForceAmount, float upwardForce)
     {
         Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation).normalized;
@@ -146,5 +157,12 @@ public class PlayerManager : MonoBehaviour
         directionToPlayerTwo.y = upwardForce;
         playerOne.GetComponent<Rigidbody2D>().AddForce(directionToPlayerOne * explosiveForceAmount, ForceMode2D.Impulse);
         playerTwo.GetComponent<Rigidbody2D>().AddForce(directionToPlayerTwo * explosiveForceAmount, ForceMode2D.Impulse);
+    }
+
+    public void LimitedExplosiveForce(Vector3 hazardlocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
+    {
+        Vector2 directionToAffectedParty = (affectedParty.transform.position - hazardlocation).normalized;
+        directionToAffectedParty.y = upwardForce;
+        affectedParty.GetComponent<Rigidbody2D>().AddForce(directionToAffectedParty * explosiveForceAmount, ForceMode2D.Impulse);
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,15 +23,25 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Header("THE LAYER THAT THE WALL IS ON")]
     LayerMask layerMask;
 
+    [SerializeField]
+    float stunTimer = 0.5f;
+    float setStunTimer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        setStunTimer = stunTimer;
+
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
     }
     void FixedUpdate()
     {
-        transform.right = input.x > 0 ? Vector2.left: Vector2.right;
+        if (stunTimer > 0)
+        {
+            stunTimer -= Time.fixedDeltaTime;
+            return;
+        }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.right, wallCheckDistance, layerMask);
         Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
@@ -47,7 +56,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
             animator.SetBool("Walking", true);
-        }        
+            transform.right = input.x > 0 ? Vector2.left : Vector2.right;
+        }
     }
     public void Movement(InputAction.CallbackContext context)
     {
@@ -64,5 +74,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isMoving = true;
         }
+    }
+    public void ActivateStunTimer()
+    {
+        stunTimer = setStunTimer;
+        animator.SetBool("Walking", false);
     }
 }
