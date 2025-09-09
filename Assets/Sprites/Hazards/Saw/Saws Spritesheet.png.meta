@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 882a5771e6de2a04abea1ad4341bcc5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5434811744277474863
+    second: Saws Spritesheet_0
+  - first:
+      213: -7141915830310703157
+    second: Saws Spritesheet_1
+  - first:
+      213: 407434988294691238
+    second: Saws Spritesheet_2
+  - first:
+      213: 8415387294721657489
+    second: Saws Spritesheet_3
+  - first:
+      213: 4012201091401043503
+    second: Saws Spritesheet_4
+  - first:
+      213: 376205720989244819
+    second: Saws Spritesheet_5
+  - first:
+      213: 3990559732049545309
+    second: Saws Spritesheet_6
+  - first:
+      213: 6220090530398292534
+    second: Saws Spritesheet_7
+  - first:
+      213: 9216628554993888984
+    second: Saws Spritesheet_8
+  - first:
+      213: 7754527989370770832
+    second: Saws Spritesheet_9
+  - first:
+      213: 3777251225414079580
+    second: Saws Spritesheet_10
+  - first:
+      213: -2595338351611501516
+    second: Saws Spritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dark-Saw-0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1298
+        width: 498
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d15831738ba394b0800000000000000
+      internalID: -5434811744277474863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Saw-1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1299
+        width: 502
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf679e4461d2ec90800000000000000
+      internalID: -7141915830310703157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Saw-2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1297
+        width: 501
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9de5296ff77a500800000000000000
+      internalID: 407434988294691238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Saw-3
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1307
+        width: 501
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a483d682679c470800000000000000
+      internalID: 8415387294721657489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver-Saw-0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 725
+        width: 498
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ec46492a33ea730800000000000000
+      internalID: 4012201091401043503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver-Saw-1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 726
+        width: 502
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d980a2c1d883500800000000000000
+      internalID: 376205720989244819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver-Saw-2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 723
+        width: 501
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d588ac3fee0516730800000000000000
+      internalID: 3990559732049545309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Silver-Saw-3
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 732
+        width: 501
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a4927c163325650800000000000000
+      internalID: 6220090530398292534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron-Saw-0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 152
+        width: 498
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dee127c6da08ef70800000000000000
+      internalID: 9216628554993888984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron-Saw-1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 153
+        width: 502
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095d44ffe1e9d9b60800000000000000
+      internalID: 7754527989370770832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron-Saw-2
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 151
+        width: 501
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54173e0afd7b6430800000000000000
+      internalID: 3777251225414079580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iron-Saw-3
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 160
+        width: 501
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434af3815818bfbd0800000000000000
+      internalID: -2595338351611501516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6d0b48dee2d5ccc4a97cc5c740e6148a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dark-Saw-0: -5434811744277474863
+      Dark-Saw-1: -7141915830310703157
+      Dark-Saw-2: 407434988294691238
+      Dark-Saw-3: 8415387294721657489
+      Iron-Saw-0: 9216628554993888984
+      Iron-Saw-1: 7754527989370770832
+      Iron-Saw-2: 3777251225414079580
+      Iron-Saw-3: -2595338351611501516
+      Silver-Saw-0: 4012201091401043503
+      Silver-Saw-1: 376205720989244819
+      Silver-Saw-2: 3990559732049545309
+      Silver-Saw-3: 6220090530398292534
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -24,14 +24,19 @@ public class PlayerJump : MonoBehaviour
     }
     void Update()
     {
-        
+
     }
-    public void Jump(InputAction.CallbackContext context)
+    public RaycastHit2D GroundCheck()
     {
         hit = Physics2D.Raycast(transform.position, -transform.up, groundCheckDistance, layerMask);
+        return hit;
+    }
+    
+    public void Jump(InputAction.CallbackContext context)
+    {
         //Debug.DrawRay(transform.position, -transform.up * groundCheckDistance, Color.red, 1f);
         if (context.canceled) return;
-        if (context.started && hit.collider != null)
+        if (context.started && GroundCheck().collider != null)
         {
             Jumping();
             animator.SetTrigger("Jump");

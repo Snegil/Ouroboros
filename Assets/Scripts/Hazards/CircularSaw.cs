@@ -9,10 +9,6 @@ public class CircularSaw : MonoBehaviour
     [SerializeField]
     float upwardForce = 2f;
 
-    void Update()
-    {
-        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
-    }
     void OnTriggerStay2D(Collider2D collision)
     {
         if (!collision.CompareTag("PlayerManager")) return;

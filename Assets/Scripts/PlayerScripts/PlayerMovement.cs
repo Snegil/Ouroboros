@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+    PlayerJump playerJump;
+
     bool isMoving = false;
 
     Rigidbody2D rb2d;
@@ -24,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
     }
     void FixedUpdate()
@@ -43,8 +47,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
             animator.SetBool("Walking", true);
-            //transform.localScale = input.x > 0 ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
-            
         }        
     }
     public void Movement(InputAction.CallbackContext context)
@@ -55,15 +57,12 @@ public class PlayerMovement : MonoBehaviour
         {
             isMoving = false;
             animator.SetBool("Walking", false);
-            //rb2d.linearVelocityX = 0;
             return;
         }
+
         if (context.started)
         {
             isMoving = true;
-            //transform.right = input.x > 0 ? Vector2.right : Vector2.left;
-            //transform.localScale = input.x > 0 ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
-            //transform.rotation = Quaternion.Euler(0, input.x > 0 ? 180 : 0, 0);
         }
     }
 }
