@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5053132155373189276}
   - component: {fileID: 4079010393019125138}
   - component: {fileID: 237484252204099014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 8147533490398916795}
   - component: {fileID: 8872637305962672196}
   - component: {fileID: 2734498739069460144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7092443648197879901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tailpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 798550074998004906}
   - component: {fileID: 6329723627666207175}
   - component: {fileID: 4823000727625830944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerOneTowbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 700723190885759073}
   - component: {fileID: 8406691448110754680}
-  - component: {fileID: 2184115670715754169}
+  - component: {fileID: 6934222915369604125}
   - component: {fileID: 5611619760182044639}
   - component: {fileID: 6221215433625555876}
   - component: {fileID: 8543342939103384689}
@@ -579,7 +579,8 @@ GameObject:
   - component: {fileID: 3463990099825750027}
   - component: {fileID: 5065740157351609505}
   - component: {fileID: 4244617560210153840}
-  m_Layer: 0
+  - component: {fileID: 3533679725733648486}
+  m_Layer: 9
   m_Name: PlayerOne
   m_TagString: PlayerOne
   m_Icon: {fileID: 0}
@@ -649,7 +650,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 101
-  m_Sprite: {fileID: 4367943151957641371, guid: b48868044c497ea4583b995b33989de2, type: 3}
+  m_Sprite: {fileID: 5511715242046201619, guid: a71f2169ea1fca542ac90c75964ecfaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -660,8 +661,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2184115670715754169
-BoxCollider2D:
+--- !u!70 &6934222915369604125
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -694,18 +695,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.14461339}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67578125, y: 0.44140625}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.60447717, y: 0.67077327}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.03302753, y: -0.12407553}
+  m_Size: {x: 0.6097262, y: 0.6702812}
+  m_Direction: 0
 --- !u!50 &5611619760182044639
 Rigidbody2D:
   serializedVersion: 5
@@ -793,11 +785,11 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0.31107634, y: -0.11060476}
+  m_Anchor: {x: 0.012284815, y: -0.03590679}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 0
   m_Distance: 1
-  m_DampingRatio: 1
+  m_DampingRatio: 0
   m_Frequency: 1
 --- !u!114 &5065740157351609505
 MonoBehaviour:
@@ -996,3 +988,23 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
+--- !u!232 &3533679725733648486
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328482017436306155}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 2
+  m_MaxDistanceOnly: 1

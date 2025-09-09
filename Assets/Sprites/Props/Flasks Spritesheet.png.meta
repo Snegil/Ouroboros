@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 1a7c4b6a2cd2cbc4bbb67445e9e3df47
+guid: 00d83a936ea40e142a3c9398576188cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7900230947565910784
-    second: DeskJunctions_0
+      213: -2821483356715196009
+    second: Flasks Spritesheet_0
+  - first:
+      213: 3194361679359603556
+    second: Flasks Spritesheet_1
+  - first:
+      213: 7299016850869448925
+    second: Flasks Spritesheet_2
+  - first:
+      213: 1528775731533372227
+    second: Flasks Spritesheet_3
+  - first:
+      213: -1544209253733541092
+    second: Flasks Spritesheet_4
+  - first:
+      213: -5958130319196562031
+    second: Flasks Spritesheet_5
+  - first:
+      213: 2491825130457471976
+    second: Flasks Spritesheet_6
+  - first:
+      213: 5170243971847038772
+    second: Flasks Spritesheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DeskJunctions_0
+      name: Flasks Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
+        x: 100
+        y: 939
+        width: 496
+        height: 606
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,96 +136,162 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00bb639803243ad60800000000000000
-      internalID: 7900230947565910784
+      spriteID: 791605ff5d318d8d0800000000000000
+      internalID: -2821483356715196009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeskJunctions_1
+      name: Flasks Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 610
+        y: 931
+        width: 490
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 95c758b70ab6e7048b7c6ca8d4a08037
-      internalID: -366651576
+      spriteID: 463795ed507a45c20800000000000000
+      internalID: 3194361679359603556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeskJunctions_2
+      name: Flasks Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
+        x: 1163
+        y: 739
+        width: 162
+        height: 850
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 09445211cc8ff26418f456fd139b5642
-      internalID: 1787721016
+      spriteID: dd0f9ad67215b4560800000000000000
+      internalID: 7299016850869448925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeskJunctions_3
+      name: Flasks Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 1427
+        y: 729
+        width: 516
+        height: 783
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8a3b51d048747ef4abfdb7181833f16d
-      internalID: 275518575
+      spriteID: 34bd8439d6d473510800000000000000
+      internalID: 1528775731533372227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeskJunctions_4
+      name: Flasks Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 117
+        y: 299
+        width: 546
+        height: 548
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c56e838fe8ffae447a6f225b8f6b38e4
-      internalID: -215252223
+      spriteID: c1b57548dddd19ae0800000000000000
+      internalID: -1544209253733541092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flasks Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 311
+        width: 284
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dddceca08705da0800000000000000
+      internalID: -5958130319196562031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flasks Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 486
+        width: 816
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb1f4ff0cdb49220800000000000000
+      internalID: 2491825130457471976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flasks Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 267
+        width: 842
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4372c00df7560c740800000000000000
+      internalID: 5170243971847038772
       vertices: []
       indices: 
       edges: []
@@ -213,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c0d327a6ac04b254db90a1fc7b132539
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -223,11 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DeskJunctions_0: 7900230947565910784
-      DeskJunctions_1: -366651576
-      DeskJunctions_2: 1787721016
-      DeskJunctions_3: 275518575
-      DeskJunctions_4: -215252223
+      Flasks Spritesheet_0: -2821483356715196009
+      Flasks Spritesheet_1: 3194361679359603556
+      Flasks Spritesheet_2: 7299016850869448925
+      Flasks Spritesheet_3: 1528775731533372227
+      Flasks Spritesheet_4: -1544209253733541092
+      Flasks Spritesheet_5: -5958130319196562031
+      Flasks Spritesheet_6: 2491825130457471976
+      Flasks Spritesheet_7: 5170243971847038772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

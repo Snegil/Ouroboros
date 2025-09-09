@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7321888398799515123}
   - component: {fileID: 4097719454932120791}
-  - component: {fileID: 3884224785637292710}
+  - component: {fileID: 3392633973411739971}
   - component: {fileID: 2813164717722996573}
   - component: {fileID: 7469873340561272032}
   - component: {fileID: 1178869204486896250}
@@ -18,7 +18,8 @@ GameObject:
   - component: {fileID: 1051811381973771810}
   - component: {fileID: 5652543407299268507}
   - component: {fileID: 7629607819450712960}
-  m_Layer: 0
+  - component: {fileID: 5381100248913151867}
+  m_Layer: 9
   m_Name: PlayerTwo
   m_TagString: PlayerTwo
   m_Icon: {fileID: 0}
@@ -88,7 +89,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 101
-  m_Sprite: {fileID: 1626055652, guid: b48868044c497ea4583b995b33989de2, type: 3}
+  m_Sprite: {fileID: 3109202919887990330, guid: a71f2169ea1fca542ac90c75964ecfaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,8 +100,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3884224785637292710
-BoxCollider2D:
+--- !u!70 &3392633973411739971
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -133,18 +134,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.14461339}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.65625, y: 0.44140625}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.60447717, y: 0.67077327}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.03302753, y: -0.12407553}
+  m_Size: {x: 0.6097262, y: 0.6702812}
+  m_Direction: 0
 --- !u!50 &2813164717722996573
 Rigidbody2D:
   serializedVersion: 5
@@ -236,7 +228,7 @@ SpringJoint2D:
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 0
   m_Distance: 1
-  m_DampingRatio: 1
+  m_DampingRatio: 0
   m_Frequency: 1
 --- !u!114 &5652543407299268507
 MonoBehaviour:
@@ -459,6 +451,26 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!232 &5381100248913151867
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2339612582525937782}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 2
+  m_MaxDistanceOnly: 1
 --- !u!1 &2948263732333923388
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +480,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5996811775139834683}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tailpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +513,7 @@ GameObject:
   - component: {fileID: 5111197906611362457}
   - component: {fileID: 5147674117294091561}
   - component: {fileID: 4498733281731325395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +627,7 @@ GameObject:
   - component: {fileID: 8419116084162636678}
   - component: {fileID: 7025664739682312324}
   - component: {fileID: 3349663759481240995}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerTwoTowbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +918,7 @@ GameObject:
   - component: {fileID: 6194959397859316920}
   - component: {fileID: 4860968143789686688}
   - component: {fileID: 2391039667751208929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
