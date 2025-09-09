@@ -13,12 +13,6 @@ public class PlayerJump : MonoBehaviour
 
     Rigidbody2D rb2d;
 
-    [SerializeField]
-    float coyoteTime;
-    float setCoyoteTime;
-
-    bool startCoyoteTime;
-
     RaycastHit2D hit;
 
     [SerializeField]
@@ -27,26 +21,10 @@ public class PlayerJump : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        setCoyoteTime = coyoteTime;
     }
     void Update()
     {
-        /*
-        if (!startCoyoteTime) { return; }
-
-        coyoteTime -= Time.deltaTime;
-
-        if (coyoteTime <= 0)
-        {
-            hit = Physics2D.Raycast(transform.position, -transform.up, groundCheckDistance, layerMask);
-            if (hit.collider != null)
-            {
-                Jumping();
-                startCoyoteTime = false;
-                coyoteTime = setCoyoteTime;
-            }
-        }
-        */
+        
     }
     public void Jump(InputAction.CallbackContext context)
     {

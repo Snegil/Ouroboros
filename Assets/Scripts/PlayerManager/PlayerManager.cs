@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -98,6 +99,8 @@ public class PlayerManager : MonoBehaviour
         lineManager.DisableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = false;
         playerTwo.GetComponent<SpringJoint2D>().enabled = false;
+        playerOne.GetComponent<DistanceJoint2D>().enabled = false;
+        playerTwo.GetComponent<DistanceJoint2D>().enabled = false;
         playerOneTowPoint.SetActive(true);
         playerTwoTowPoint.SetActive(true);
     }
@@ -122,6 +125,8 @@ public class PlayerManager : MonoBehaviour
         lineManager.EnableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = true;
         playerTwo.GetComponent<SpringJoint2D>().enabled = true;
+        playerOne.GetComponent<DistanceJoint2D>().enabled = true;
+        playerTwo.GetComponent<DistanceJoint2D>().enabled = true;
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
     }
