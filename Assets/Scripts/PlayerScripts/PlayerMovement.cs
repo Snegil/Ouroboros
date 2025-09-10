@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
     float stunTimer = 0.5f;
     float setStunTimer;
 
+    SpringJoint2D towSpringJoint2D;
+    DistanceJoint2D towDistanceJoint2D;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
+        towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
     }
     void FixedUpdate()
     {
@@ -57,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
             rb2d.linearVelocityX = input.x * movementSpeed;
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
+            towSpringJoint2D.connectedAnchor = input.x > 0 ? Vector2.left : Vector2.right;
         }
     }
     public void Movement(InputAction.CallbackContext context)

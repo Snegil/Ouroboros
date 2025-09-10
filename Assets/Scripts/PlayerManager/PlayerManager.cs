@@ -146,6 +146,9 @@ public class PlayerManager : MonoBehaviour
         }
 
         LimitedExplosiveForce(hazardLocation, explosiveForceAmount, upwardForce, affectedParty);
+        
+        if (affectedParty.GetComponent<PlayerManager>() == null) return;
+
         affectedParty.GetComponent<PlayerMovement>().ActivateStunTimer();
     }
 
