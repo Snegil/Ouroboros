@@ -48,21 +48,25 @@ public class PlayerMovement : MonoBehaviour
         }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.right, wallCheckDistance, layerMask);
-        //Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
+        Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
+        Debug.Log(hit.collider + " " + hit.normal.x + " " + input.normalized.x + " " + Vector2.SqrMagnitude(hit.normal - input.normalized));
 
-        if (hit.collider != null && Vector2.Dot(hit.normal, rb2d.linearVelocity) < 0)
+        if (hit.collider != null && Vector2.SqrMagnitude(hit.normal - input.normalized) > 0.1f)
         {
             rb2d.linearVelocityX = 0;
+            rb2d.position = new Vector2(rb2d.position.x + (hit.distance - (wallCheckDistance - 0.2f)) * -transform.right.x, rb2d.position.y);
             animator.SetBool("Walking", false);
             return;
         }
-        if (isMoving && hit.collider == null)
+        if (isMoving)
         {
             rb2d.linearVelocityX = input.x * movementSpeed;
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
             towSpringJoint2D.connectedAnchor = input.x > 0 ? Vector2.left : Vector2.right;
+            return;
         }
+
     }
     public void Movement(InputAction.CallbackContext context)
     {

@@ -27,6 +27,8 @@ public class PlayerHPManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (vignette == null) return;
+        
         if (!playerManager.IsJoint)
         {
             hp -= hpLost * Time.deltaTime;
