@@ -28,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
     float setStunTimer;
 
     SpringJoint2D towSpringJoint2D;
-    DistanceJoint2D towDistanceJoint2D;
 
     Vector2 originalTowPosition;
 
@@ -51,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -transform.right, wallCheckDistance, layerMask);
-        Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
-        Debug.Log(hit.collider + " " + hit.normal.x + " " + input.normalized.x + " " + Vector2.SqrMagnitude(hit.normal - input.normalized));
+        //Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
+        //Debug.Log(hit.collider + " " + hit.normal.x + " " + input.normalized.x + " " + Vector2.SqrMagnitude(hit.normal - input.normalized));
 
         if (hit.collider != null && Vector2.SqrMagnitude(hit.normal - input.normalized) > 0.1f)
         {

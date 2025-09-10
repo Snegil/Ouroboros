@@ -34,6 +34,8 @@ public class PlayerJump : MonoBehaviour
     
     public void Jump(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0) return;
+        
         //Debug.DrawRay(transform.position, -transform.up * groundCheckDistance, Color.red, 1f);
         if (context.canceled) return;
         if (context.started && GroundCheck().collider != null)
