@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     SpringJoint2D towSpringJoint2D;
     DistanceJoint2D towDistanceJoint2D;
 
+    Vector2 originalTowPosition;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
         towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
+        originalTowPosition = towSpringJoint2D.connectedAnchor;
     }
     void FixedUpdate()
     {
@@ -63,13 +66,21 @@ public class PlayerMovement : MonoBehaviour
             rb2d.linearVelocityX = input.x * movementSpeed;
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
-            towSpringJoint2D.connectedAnchor = input.x > 0 ? Vector2.left : Vector2.right;
+            towSpringJoint2D.connectedAnchor = input.x > 0 ? new(-originalTowPosition.x, originalTowPosition.y) : new(originalTowPosition.x, originalTowPosition.y);
             return;
         }
 
     }
     public void Movement(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0)
+        {
+            input = Vector2.zero;
+            isMoving = false;
+            animator.SetBool("Walking", false);
+            return;
+        }
+
         input = context.ReadValue<Vector2>();
         // If the input is cancelled, turn isMoving to false and set the x velocity to 0.
         if (context.canceled)
