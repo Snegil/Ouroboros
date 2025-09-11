@@ -180,10 +180,10 @@ MonoBehaviour:
   raycastOffset: {x: 0.2, y: -0.45}
   movementSpeed: 5
   animator: {fileID: 4498733281731325395}
-  wallCheckDistance: 1
+  wallCheckDistance: 0.3
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4096
   stunTimer: 0.5
 --- !u!114 &1178869204486896250
 MonoBehaviour:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7469873340561272032}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: Movement
         m_Mode: 0
@@ -842,7 +842,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.0001
-  m_LinearDamping: 0
+  m_LinearDamping: 0.24
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -872,7 +872,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -908,9 +908,9 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.3227307, y: -0.39482945}
+  m_ConnectedAnchor: {x: 0.9167149, y: -0.2042439}
   m_AutoConfigureDistance: 0
-  m_Distance: 0.24
+  m_Distance: 0.14
   m_DampingRatio: 1
   m_Frequency: 2
 --- !u!114 &3349663759481240995
