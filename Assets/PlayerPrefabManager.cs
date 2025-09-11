@@ -10,6 +10,10 @@ public class PlayerPrefabManager : MonoBehaviour
 
     private void Awake()
     {
+        SetControllersToPlayers();
+    }
+    public void SetControllersToPlayers()
+    {
         var gamepads = Gamepad.all;
 
         if (gamepads.Count > 0)

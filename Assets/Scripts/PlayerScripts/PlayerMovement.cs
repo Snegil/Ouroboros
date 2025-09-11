@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3)raycastOffset, -transform.right, wallCheckDistance, layerMask);
-        if (visualiseRaycast) Debug.DrawRay(transform.position, -transform.right * wallCheckDistance, Color.red, 1f);
+        if (visualiseRaycast) Debug.DrawRay(transform.position + (Vector3)raycastOffset, -transform.right * wallCheckDistance, Color.red, 1f);
         //Debug.Log(hit.collider + " " + hit.normal.x + " " + input.normalized.x + " " + Vector2.SqrMagnitude(hit.normal - input.normalized));
 
         if (hit.collider != null && Vector2.SqrMagnitude(hit.normal - input.normalized) > 0.1f)
