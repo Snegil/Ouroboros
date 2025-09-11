@@ -506,6 +506,7 @@ GameObject:
   - component: {fileID: 369465514}
   - component: {fileID: 369465516}
   - component: {fileID: 369465515}
+  - component: {fileID: 369465517}
   m_Layer: 5
   m_Name: Behindbuttons
   m_TagString: Untagged
@@ -525,6 +526,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 596571634}
   - {fileID: 904900437}
   - {fileID: 411888345}
   - {fileID: 1246600647}
@@ -556,7 +558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 622976470807774460, guid: 9290991ab927c334ca5c2a235829eb78, type: 3}
+  m_Sprite: {fileID: 618986441908329972, guid: f50785eb258c90042802751330874587, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -574,6 +576,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369465513}
   m_CullTransparentMesh: 1
+--- !u!114 &369465517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369465513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a690e1791c07bf34e812a58e0e246207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 618986441908329972, guid: f50785eb258c90042802751330874587, type: 3}
+  - {fileID: -1466730270245162509, guid: f50785eb258c90042802751330874587, type: 3}
+  - {fileID: -4581454988137293292, guid: f50785eb258c90042802751330874587, type: 3}
 --- !u!1 &411888344
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,10 +626,10 @@ RectTransform:
   - {fileID: 212149408}
   m_Father: {fileID: 369465514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15, y: 0.6}
-  m_AnchorMax: {x: 0.85, y: 0.75}
+  m_AnchorMin: {x: 0.15, y: 0.5}
+  m_AnchorMax: {x: 0.85, y: 0.65}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0.00000011920929}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411888346
 MonoBehaviour:
@@ -848,6 +866,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &596571633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596571634}
+  - component: {fileID: 596571636}
+  - component: {fileID: 596571635}
+  m_Layer: 5
+  m_Name: IceSkinks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &596571634
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596571633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 369465514}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.4, y: 0.75}
+  m_AnchorMax: {x: 0.6, y: 1}
+  m_AnchoredPosition: {x: -6.899933, y: -190.54999}
+  m_SizeDelta: {x: 170.52003, y: 68.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &596571635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596571633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 622976470807774460, guid: 9290991ab927c334ca5c2a235829eb78, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &596571636
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596571633}
+  m_CullTransparentMesh: 1
 --- !u!1 &623886362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &904900437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1337,7 +1430,7 @@ MonoBehaviour:
   m_TrackedDevicePositionAction: {fileID: 0}
   m_TrackedDeviceOrientationAction: {fileID: 0}
   m_DeselectOnBackgroundClick: 0
-  m_PointerBehavior: 0
+  m_PointerBehavior: 2
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
 --- !u!114 &1040508803
@@ -1470,8 +1563,8 @@ RectTransform:
   - {fileID: 319298403}
   m_Father: {fileID: 369465514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15, y: 0.4}
-  m_AnchorMax: {x: 0.85, y: 0.55}
+  m_AnchorMin: {x: 0.15, y: 0.3}
+  m_AnchorMax: {x: 0.85, y: 0.45}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5471,6 +5564,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1920593020}
     - target: {fileID: 5652543407299268507, guid: cfba8dab7147a174dab79ead98156739, type: 3}
+      propertyPath: m_UIInputModule
+      value: 
+      objectReference: {fileID: 1040508802}
+    - target: {fileID: 5652543407299268507, guid: cfba8dab7147a174dab79ead98156739, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1828239615}
@@ -5766,6 +5863,10 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 1920593020}
+    - target: {fileID: 5065740157351609505, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
+      propertyPath: m_UIInputModule
+      value: 
+      objectReference: {fileID: 1040508802}
     - target: {fileID: 5065740157351609505, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

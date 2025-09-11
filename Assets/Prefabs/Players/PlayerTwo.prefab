@@ -357,8 +357,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: d628b126-6df1-462c-85a8-ddcbc096b9f4
     m_ActionName: 'UI/START[/DualShock4GamepadHID/start,/DualShock4GamepadHID1/start,/DualShock4GamepadHID/select,/DualShock4GamepadHID1/select,/Keyboard/enter]'
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

@@ -28,7 +28,7 @@ public class PlayerHPManager : MonoBehaviour
     void Update()
     {
         if (vignette == null) return;
-        
+
         if (!playerManager.IsJoint)
         {
             hp -= hpLost * Time.deltaTime;
@@ -43,5 +43,13 @@ public class PlayerHPManager : MonoBehaviour
         {
             Debug.LogWarning("When in doubt, look intelligent.");
         }
+    }
+    public float HP
+    {
+        get { return hp; }
+    }
+    public float MaxHP 
+    {
+        get { return maxHP; }
     }
 }
