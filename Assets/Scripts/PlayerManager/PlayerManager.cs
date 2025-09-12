@@ -102,6 +102,7 @@ public class PlayerManager : MonoBehaviour
         playerTwo.GetComponent<DistanceJoint2D>().enabled = false;
         playerOneTowPoint.SetActive(true);
         playerTwoTowPoint.SetActive(true);
+        GetComponent<CapsuleCollider2D>().enabled = false;
     }
     public void JoinPlayers()
     {
@@ -128,6 +129,7 @@ public class PlayerManager : MonoBehaviour
         playerTwo.GetComponent<DistanceJoint2D>().enabled = true;
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
+        GetComponent<CapsuleCollider2D>().enabled = true;
     }
     public void HazardSplit(Vector3 hazardLocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
     {

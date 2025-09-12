@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +9,9 @@ public class PlayerMovement : MonoBehaviour
     bool visualiseRaycast = false;
     [SerializeField]
     Vector2 raycastOffset = Vector2.zero;
-    
+    [SerializeField]
+    Transform raycastOrigin;
+
     PlayerJump playerJump;
 
     bool isMoving = false;
@@ -54,8 +57,8 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3)raycastOffset, -transform.right, wallCheckDistance, layerMask);
-        if (visualiseRaycast) Debug.DrawRay(transform.position + (Vector3)raycastOffset, -transform.right * wallCheckDistance, Color.red, 1f);
+        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, -transform.right, wallCheckDistance, layerMask);
+        if (visualiseRaycast) Debug.DrawRay(raycastOrigin.position, -transform.right * wallCheckDistance, Color.red, 1f);
         //Debug.Log(hit.collider + " " + hit.normal.x + " " + input.normalized.x + " " + Vector2.SqrMagnitude(hit.normal - input.normalized));
 
         if (hit.collider != null && Vector2.SqrMagnitude(hit.normal - input.normalized) > 0.1f)
