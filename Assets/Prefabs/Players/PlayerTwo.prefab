@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abd59d14b806b845977bb8dd89ddb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualiseRaycast: 1
+  visualiseRaycast: 0
   raycastOffset: {x: 0.2, y: -0.45}
   raycastOrigin: {fileID: 4336961861181461113}
   movementSpeed: 5

@@ -76,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
             towSpringJoint2D.connectedAnchor = input.x > 0 ? new(-originalTowPosition.x, originalTowPosition.y) : new(originalTowPosition.x, originalTowPosition.y);
             return;
         }
-
     }
     public void Movement(InputAction.CallbackContext context)
     {
