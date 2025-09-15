@@ -20,6 +20,9 @@ public class PlayerHPManager : MonoBehaviour
 
     SceneTransition sceneTransition;
 
+    [SerializeField]
+    bool allowDeath = true;
+
     bool dying = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -62,6 +65,8 @@ public class PlayerHPManager : MonoBehaviour
     }
     public void PlayerDeath()
     {
+        if (!allowDeath) return;
+        
         dying = true;
 
         vignette.color = new Color(1f, 1f, 1f, 1f);
