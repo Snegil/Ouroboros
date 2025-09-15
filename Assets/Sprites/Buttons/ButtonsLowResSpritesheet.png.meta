@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 311e176007267eb45901f09847fb7619
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4742222357356428316
+    second: ButtonsLowResSpritesheet_0
+  - first:
+      213: -4742062389619462061
+    second: ButtonsLowResSpritesheet_1
+  - first:
+      213: 8334093309759970700
+    second: ButtonsLowResSpritesheet_2
+  - first:
+      213: 1607838613695778772
+    second: ButtonsLowResSpritesheet_3
+  - first:
+      213: -8494722389263543817
+    second: ButtonsLowResSpritesheet_4
+  - first:
+      213: 2469844138905626570
+    second: ButtonsLowResSpritesheet_5
+  - first:
+      213: 4793605103400855113
+    second: ButtonsLowResSpritesheet_6
+  - first:
+      213: 2159527297032323437
+    second: ButtonsLowResSpritesheet_7
+  - first:
+      213: 6718521714284100979
+    second: ButtonsLowResSpritesheet_8
+  - first:
+      213: -4000960829113066335
+    second: ButtonsLowResSpritesheet_9
+  - first:
+      213: 2901792583034798642
+    second: ButtonsLowResSpritesheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 148
+        width: 67
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c3520db12cfc140800000000000000
+      internalID: 4742222357356428316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 148
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350fdf3916fc03eb0800000000000000
+      internalID: -4742062389619462061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 151
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dd33595b5a8a370800000000000000
+      internalID: 8334093309759970700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 117
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df4e7153b0305610800000000000000
+      internalID: 1607838613695778772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 117
+        width: 66
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f193627efeac1a80800000000000000
+      internalID: -8494722389263543817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 120
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7ec069826a64220800000000000000
+      internalID: 2469844138905626570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 85
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94625b5a17e468240800000000000000
+      internalID: 4793605103400855113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 85
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d610f5e82ae28fd10800000000000000
+      internalID: 2159527297032323437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 88
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37df6a327ebfc3d50800000000000000
+      internalID: 6718521714284100979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 63
+        width: 66
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac967ce25bb978c0800000000000000
+      internalID: -4000960829113066335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsLowResSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 66
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23207abdafc354820800000000000000
+      internalID: 2901792583034798642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ButtonsLowResSpritesheet_0: 4742222357356428316
+      ButtonsLowResSpritesheet_1: -4742062389619462061
+      ButtonsLowResSpritesheet_10: 2901792583034798642
+      ButtonsLowResSpritesheet_2: 8334093309759970700
+      ButtonsLowResSpritesheet_3: 1607838613695778772
+      ButtonsLowResSpritesheet_4: -8494722389263543817
+      ButtonsLowResSpritesheet_5: 2469844138905626570
+      ButtonsLowResSpritesheet_6: 4793605103400855113
+      ButtonsLowResSpritesheet_7: 2159527297032323437
+      ButtonsLowResSpritesheet_8: 6718521714284100979
+      ButtonsLowResSpritesheet_9: -4000960829113066335
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
