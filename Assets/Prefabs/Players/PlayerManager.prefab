@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1400535972393309066}
   - component: {fileID: 3741208433322134881}
   - component: {fileID: 7571126313081819413}
+  - component: {fileID: 430865427999805198}
   - component: {fileID: 9006562490731332683}
   m_Layer: 9
   m_Name: PlayerManager
@@ -180,6 +181,19 @@ MonoBehaviour:
   hpRegen: 10
   hpLost: 5
   vignette: {fileID: 0}
+--- !u!114 &430865427999805198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355942901310125273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f0e98592abacb409230d1049a9f2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTime: 1
 --- !u!70 &9006562490731332683
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
