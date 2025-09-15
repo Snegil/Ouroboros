@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     [Space]
     [Space, SerializeField]
     float movementSpeed = 5f;
+    [SerializeField]
+    float maxSpeed = 100f;
 
     Vector2 input;
 
@@ -70,7 +72,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (isMoving)
         {
-            rb2d.linearVelocityX = input.x * movementSpeed;
+            //rb2d.linearVelocityX = input.x * movementSpeed;
+            rb2d.AddForce(new Vector2(input.x * movementSpeed, 0), ForceMode2D.Force);
+            rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
             towSpringJoint2D.connectedAnchor = input.x > 0 ? new(-originalTowPosition.x, originalTowPosition.y) : new(originalTowPosition.x, originalTowPosition.y);
