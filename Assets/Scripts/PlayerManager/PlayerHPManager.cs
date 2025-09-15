@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(PlayerManager))]
 public class PlayerHPManager : MonoBehaviour
 {
     [SerializeField]
@@ -18,9 +18,17 @@ public class PlayerHPManager : MonoBehaviour
     [SerializeField]
     Image vignette;
 
+    SceneTransition sceneTransition;
+
+    [SerializeField]
+    bool allowDeath = true;
+
+    bool dying = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sceneTransition = GetComponent<SceneTransition>();
         playerManager = GetComponent<PlayerManager>();
     }
 
@@ -28,6 +36,13 @@ public class PlayerHPManager : MonoBehaviour
     void Update()
     {
         if (vignette == null) return;
+        if (dying) return;
+
+        if (hp <= 0f)
+        {
+            Debug.LogWarning("When in doubt, look intelligent.");
+            PlayerDeath();
+        }
 
         if (!playerManager.IsJoint)
         {
@@ -37,19 +52,24 @@ public class PlayerHPManager : MonoBehaviour
         {
             hp = Mathf.Clamp(hp + hpRegen * Time.deltaTime, 0f, maxHP);
         }
-        vignette.color = new Color(1f, 1f, 1f, 1f - (hp / maxHP));
 
-        if (hp <= 0f)
-        {
-            Debug.LogWarning("When in doubt, look intelligent.");
-        }
+        vignette.color = new Color(1f, 1f, 1f, 1f - (hp / maxHP));
     }
     public float HP
     {
         get { return hp; }
     }
-    public float MaxHP 
+    public float MaxHP
     {
         get { return maxHP; }
+    }
+    public void PlayerDeath()
+    {
+        if (!allowDeath) return;
+        
+        dying = true;
+
+        vignette.color = new Color(1f, 1f, 1f, 1f);
+        sceneTransition.ChangeScene("EndScreen");
     }
 }
