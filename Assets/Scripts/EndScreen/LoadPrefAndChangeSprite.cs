@@ -5,13 +5,10 @@ using UnityEngine.UI;
 public class LoadPrefAndChangeSprite : MonoBehaviour
 {
     [SerializeField]
-    Image textSpriteRenderer;
+    GameObject loseObject;
     [SerializeField]
-    Sprite victoryTextSprite;
-    [Space, SerializeField]
-    Image imageSpriteRenderer; 
-    [SerializeField]
-    Sprite victoryImageSprite;
+    GameObject winObject;
+
     
     
 
@@ -19,8 +16,8 @@ public class LoadPrefAndChangeSprite : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Victory"))
         {
-            textSpriteRenderer.sprite = victoryTextSprite;
-            imageSpriteRenderer.sprite = victoryImageSprite;
+            loseObject.SetActive(false);
+            winObject.SetActive(true);
 
             PlayerPrefs.DeleteKey("Victory");
         }
