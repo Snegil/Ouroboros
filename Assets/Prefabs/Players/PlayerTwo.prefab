@@ -180,7 +180,8 @@ MonoBehaviour:
   visualiseRaycast: 0
   raycastOffset: {x: 0.2, y: -0.45}
   raycastOrigin: {fileID: 4336961861181461113}
-  movementSpeed: 7
+  movementSpeed: 130
+  maxSpeed: 6
   animator: {fileID: 4498733281731325395}
   wallCheckDistance: 0.3
   layerMask:
@@ -199,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd73e4985156b57428957ee0743cf949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 900
   groundCheckDistance: 0.5
   layerMask:
     serializedVersion: 2
