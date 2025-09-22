@@ -31,11 +31,15 @@ public class PlayerJump : MonoBehaviour
         hit = Physics2D.Raycast(transform.position, -transform.up, groundCheckDistance, layerMask);
         return hit;
     }
+    public bool isGrounded()
+    {
+        return GroundCheck().collider == null ? false : true;
+    }
     
     public void Jump(InputAction.CallbackContext context)
     {
         if (Time.timeScale == 0) return;
-        
+
         //Debug.DrawRay(transform.position, -transform.up * groundCheckDistance, Color.red, 1f);
         if (context.canceled) return;
         if (context.started && GroundCheck().collider != null)

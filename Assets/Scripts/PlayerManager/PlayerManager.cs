@@ -78,11 +78,11 @@ public class PlayerManager : MonoBehaviour
     public void SplitAction()
     {
         splitActions.Add(true);
-        if (splitActions.Count >= 2 && isJoint)
+        if (splitActions.Count >= 1 && isJoint)
         {
             SplitPlayers();
         }
-        else if (splitActions.Count >= 2 && !isJoint)
+        else if (splitActions.Count >= 1 && !isJoint)
         {
             JoinPlayers();
         }

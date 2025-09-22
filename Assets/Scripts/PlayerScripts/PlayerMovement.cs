@@ -22,7 +22,9 @@ public class PlayerMovement : MonoBehaviour
     float movementSpeed = 5f;
     [SerializeField]
     float maxSpeed = 100f;
-
+    [SerializeField, Header("The multiplier for when not on ground.")]
+    float airMovementMultiplier = 0.5f;
+    float speedMultiplier = 1f;    
     Vector2 input;
 
     [SerializeField]
@@ -73,8 +75,12 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving)
         {
             //rb2d.linearVelocityX = input.x * movementSpeed;
-            rb2d.AddForce(new Vector2(input.x * movementSpeed, 0), ForceMode2D.Force);
+            speedMultiplier = playerJump.isGrounded() ? 1f : airMovementMultiplier;
+            rb2d.AddForce(new Vector2(input.x * movementSpeed * speedMultiplier, 0), ForceMode2D.Force);
             rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);
+
+            Debug.Log(gameObject.name + "Linear Velocity X "  + rb2d.linearVelocityX);
+
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
             towSpringJoint2D.connectedAnchor = input.x > 0 ? new(-originalTowPosition.x, originalTowPosition.y) : new(originalTowPosition.x, originalTowPosition.y);

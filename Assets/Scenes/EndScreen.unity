@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 136147534}
   - component: {fileID: 136147533}
   - component: {fileID: 136147532}
+  - component: {fileID: 136147535}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -323,9 +324,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -4860614926732852603, guid: c3e6e65a1a9617345961da0b8849ff46, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 22f7dabcaeb764b4389eebb6b6eea7ea, type: 3}
     m_PressedSprite: {fileID: -4860614926732852603, guid: c3e6e65a1a9617345961da0b8849ff46, type: 3}
-    m_SelectedSprite: {fileID: -4860614926732852603, guid: c3e6e65a1a9617345961da0b8849ff46, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 22f7dabcaeb764b4389eebb6b6eea7ea, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -388,6 +389,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136147530}
   m_CullTransparentMesh: 1
+--- !u!114 &136147535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136147530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd78aec81443d5548b942294f31e3fbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &254270536
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,9 +769,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -3609250477098914630, guid: c3e6e65a1a9617345961da0b8849ff46, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 2076a21efdfdeab41a8197448e98b6f6, type: 3}
     m_PressedSprite: {fileID: -3609250477098914630, guid: c3e6e65a1a9617345961da0b8849ff46, type: 3}
-    m_SelectedSprite: {fileID: -3609250477098914630, guid: c3e6e65a1a9617345961da0b8849ff46, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 2076a21efdfdeab41a8197448e98b6f6, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -910,6 +923,7 @@ GameObject:
   - component: {fileID: 1399786017}
   - component: {fileID: 1399786016}
   - component: {fileID: 1399786015}
+  - component: {fileID: 1399786018}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -965,9 +979,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 437929924, guid: 8fc569eb19fbb6d45a195552e62e11f9, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 9a9f96b93c07f644aa8e0e1c7d3d0d70, type: 3}
     m_PressedSprite: {fileID: 437929924, guid: 8fc569eb19fbb6d45a195552e62e11f9, type: 3}
-    m_SelectedSprite: {fileID: 437929924, guid: 8fc569eb19fbb6d45a195552e62e11f9, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 9a9f96b93c07f644aa8e0e1c7d3d0d70, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -1030,6 +1044,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399786013}
   m_CullTransparentMesh: 1
+--- !u!114 &1399786018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399786013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd78aec81443d5548b942294f31e3fbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1476230288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,9 +1123,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 1879085536, guid: 8fc569eb19fbb6d45a195552e62e11f9, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 762561ee6c7e18643a728c5b6691e436, type: 3}
     m_PressedSprite: {fileID: 1879085536, guid: 8fc569eb19fbb6d45a195552e62e11f9, type: 3}
-    m_SelectedSprite: {fileID: 1879085536, guid: 8fc569eb19fbb6d45a195552e62e11f9, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: 762561ee6c7e18643a728c5b6691e436, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
