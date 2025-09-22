@@ -79,8 +79,6 @@ public class PlayerMovement : MonoBehaviour
             rb2d.AddForce(new Vector2(input.x * movementSpeed * speedMultiplier, 0), ForceMode2D.Force);
             rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);
 
-            Debug.Log(gameObject.name + "Linear Velocity X "  + rb2d.linearVelocityX);
-
             animator.SetBool("Walking", true);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
             towSpringJoint2D.connectedAnchor = input.x > 0 ? new(-originalTowPosition.x, originalTowPosition.y) : new(originalTowPosition.x, originalTowPosition.y);
