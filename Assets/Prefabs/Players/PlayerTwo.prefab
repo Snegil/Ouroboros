@@ -185,7 +185,7 @@ MonoBehaviour:
   maxSpeed: 6
   airMovementMultiplier: 0.5
   animator: {fileID: 4498733281731325395}
-  wallCheckDistance: 0.3
+  wallCheckDistance: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 4160
@@ -206,7 +206,7 @@ MonoBehaviour:
   groundCheckDistance: 0.5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 7671
   animator: {fileID: 4498733281731325395}
 --- !u!114 &2240556877782943284
 MonoBehaviour:

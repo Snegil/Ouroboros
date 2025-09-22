@@ -1961,10 +1961,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7469873340561272032, guid: cfba8dab7147a174dab79ead98156739, type: 3}
-      propertyPath: wallCheckDistance
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2735,10 +2731,6 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 188374417}
-    - target: {fileID: 6221215433625555876, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
-      propertyPath: wallCheckDistance
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7328482017436306155, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
       propertyPath: m_Name
       value: PlayerOne-Orange
