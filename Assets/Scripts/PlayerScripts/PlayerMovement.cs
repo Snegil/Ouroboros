@@ -65,16 +65,16 @@ public class PlayerMovement : MonoBehaviour
         if (visualiseRaycast) Debug.DrawRay(raycastOrigin.position, -transform.right * wallCheckDistance, Color.red, 1f);
         //Debug.Log(hit.collider + " " + hit.normal.x + " " + input.normalized.x + " " + Vector2.SqrMagnitude(hit.normal - input.normalized));
 
-        if (hit.collider != null && Vector2.SqrMagnitude(hit.normal - input.normalized) > 0.1f)
+        if (hit.collider != null && isMoving)
         {
             rb2d.linearVelocityX = 0;
-            rb2d.position = new Vector2(rb2d.position.x + (hit.distance - (wallCheckDistance - 0.2f)) * -transform.right.x, rb2d.position.y);
+            transform.right = input.x > 0 ? Vector2.left : Vector2.right;
             animator.SetBool("Walking", false);
             return;
         }
+        
         if (isMoving)
         {
-            //rb2d.linearVelocityX = input.x * movementSpeed;
             speedMultiplier = playerJump.isGrounded() ? 1f : airMovementMultiplier;
             rb2d.AddForce(new Vector2(input.x * movementSpeed * speedMultiplier, 0), ForceMode2D.Force);
             rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);

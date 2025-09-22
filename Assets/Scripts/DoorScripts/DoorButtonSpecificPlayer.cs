@@ -5,6 +5,7 @@ public class DoorButtonSpecificPlayer : MonoBehaviour
 {
     [SerializeField]
     GameObject player;
+    public GameObject Player { get { return player; } }
 
     [SerializeField]
     List<MonoBehaviour> doorToOpen = new();
