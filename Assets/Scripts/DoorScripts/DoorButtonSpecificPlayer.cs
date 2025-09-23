@@ -12,6 +12,8 @@ public class DoorButtonSpecificPlayer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (doorToOpen.Count == 0) { Debug.LogWarning(gameObject.name + "'S LIST IS EMPTY"); return; }
+
         if (collision.gameObject.CompareTag(player.tag))
         {
             foreach (var door in doorToOpen)

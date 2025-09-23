@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DoorButtonChildConstraints : MonoBehaviour
@@ -5,8 +6,6 @@ public class DoorButtonChildConstraints : MonoBehaviour
     Rigidbody2D rb2d;
 
     DoorButtonSpecificPlayer doorButtonSpecificPlayer;
-
-    bool doneOnce = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,12 +17,16 @@ public class DoorButtonChildConstraints : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (doneOnce) return;
-
         if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
         {
             rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-            doneOnce = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag(doorButtonSpecificPlayer.Player.tag))
+        {
+            rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         }
     }
 }
