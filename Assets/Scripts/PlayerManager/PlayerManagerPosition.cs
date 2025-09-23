@@ -11,10 +11,17 @@ public class PlayerManagerPosition : MonoBehaviour
     [SerializeField]
     float rotateSpeed = 10f;
 
+    CapsuleCollider2D playerManagerCollider;
+    [Space, SerializeField, Header("Max Collider X Size when joint")]
+    float colliderMaxXSize = 2f;
+    [SerializeField, Header("Min Collider X Size when joint")]
+    float colliderMinXSize = 1f;
+
     void Start()
     {
         playerManager = gameObject.GetComponent<PlayerManager>();
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        playerManagerCollider = gameObject.GetComponent<CapsuleCollider2D>();
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -25,5 +32,10 @@ public class PlayerManagerPosition : MonoBehaviour
         Vector2 direction = transform.position - playerManager.GetPlayerTwo().transform.GetChild(0).position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb2d.MoveRotation(Mathf.LerpAngle(rb2d.rotation, angle, rotateSpeed * Time.fixedDeltaTime));
+
+        if (playerManager.IsJoint)
+        {
+            playerManagerCollider.size = new Vector2(Mathf.Clamp(playerManager.DistanceBetweenPlayers(), colliderMinXSize, colliderMaxXSize), playerManagerCollider.size.y);
+        }
     }
 }

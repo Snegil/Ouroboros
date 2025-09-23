@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -18,21 +19,17 @@ public class PlayerManager : MonoBehaviour
 
     List<bool> splitActions = new();
 
-    quaternion originalRotation;
-
     SpriteRenderer spriteRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        originalRotation = transform.rotation;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         playerOne = GameObject.FindWithTag("PlayerOne");
         playerTwo = GameObject.FindWithTag("PlayerTwo");
         lineManager = gameObject.GetComponent<PlayerLineManager>();
         playerManagerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-
 
         playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
         playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
@@ -120,7 +117,7 @@ public class PlayerManager : MonoBehaviour
     void ActivateJoin()
     {
         isJoint = true;
-        transform.rotation = originalRotation;
+        transform.rotation = quaternion.identity;
         playerManagerSpriteRenderer.enabled = true;
         lineManager.EnableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = true;
