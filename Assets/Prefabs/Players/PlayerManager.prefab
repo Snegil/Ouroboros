@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionDistance: 4
+  hazardExplosiveForceAmount: 5
+  hazardUpwardForce: 2
 --- !u!114 &1400535972393309066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotateSpeed: 10
+  colliderMaxXSize: 3
+  colliderMinXSize: 0.5
 --- !u!114 &7571126313081819413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,5 +234,5 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.011690498, y: -0.0000000013936159}
-  m_Size: {x: 0.94, y: 0.46876097}
+  m_Size: {x: 0.94, y: 0.35}
   m_Direction: 1

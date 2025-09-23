@@ -290,10 +290,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3741208433322134881, guid: b799ef058cc53ec44a50b6dc91e94387, type: 3}
+      propertyPath: colliderMaxXSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3741208433322134881, guid: b799ef058cc53ec44a50b6dc91e94387, type: 3}
+      propertyPath: colliderMinXSize
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7571126313081819413, guid: b799ef058cc53ec44a50b6dc91e94387, type: 3}
       propertyPath: vignette
       value: 
       objectReference: {fileID: 1102202401}
+    - target: {fileID: 9006562490731332683, guid: b799ef058cc53ec44a50b6dc91e94387, type: 3}
+      propertyPath: m_Size.y
+      value: 0.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
