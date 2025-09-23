@@ -865,9 +865,9 @@ MonoBehaviour:
   raycastOrigin: {fileID: 1143491076707422185}
   movementSpeed: 130
   maxSpeed: 6
-  airMovementMultiplier: 0.5
+  airMovementMultiplier: 0.1
   animator: {fileID: 2734498739069460144}
-  wallCheckDistance: 0
+  wallCheckDistance: 0.1
   layerMask:
     serializedVersion: 2
     m_Bits: 4224
@@ -1150,7 +1150,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: a7c14836353de15499e6efefeadd483f, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

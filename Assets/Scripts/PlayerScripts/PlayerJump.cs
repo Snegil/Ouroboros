@@ -28,7 +28,8 @@ public class PlayerJump : MonoBehaviour
     }
     public RaycastHit2D GroundCheck()
     {
-        hit = Physics2D.Raycast(transform.position, -transform.up, groundCheckDistance, layerMask);
+        hit = Physics2D.BoxCast(transform.position, new Vector2(0.5f, 0.1f), 0f, Vector2.down, groundCheckDistance, layerMask);
+        //hit = Physics2D.Raycast(transform.position, -transform.up, groundCheckDistance, layerMask);
         return hit;
     }
     public bool isGrounded()

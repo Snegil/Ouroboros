@@ -178,14 +178,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abd59d14b806b845977bb8dd89ddb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualiseRaycast: 0
-  raycastOffset: {x: 0.2, y: -0.45}
+  visualiseRaycast: 1
+  raycastOffset: {x: 0, y: 0}
   raycastOrigin: {fileID: 4336961861181461113}
   movementSpeed: 130
   maxSpeed: 6
-  airMovementMultiplier: 0.5
+  airMovementMultiplier: 0.1
   animator: {fileID: 4498733281731325395}
-  wallCheckDistance: 0
+  wallCheckDistance: 0.1
   layerMask:
     serializedVersion: 2
     m_Bits: 4160
@@ -468,7 +468,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: a7c14836353de15499e6efefeadd483f, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
