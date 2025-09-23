@@ -28,9 +28,10 @@ public class PlayerManagerPosition : MonoBehaviour
         //transform.position = playerManager.AveragePosition();
 
         rb2d.MovePosition(Vector2.Lerp(transform.position, playerManager.AveragePosition(), moveSpeed * Time.fixedDeltaTime));
-        Vector2 direction = transform.position - playerManager.GetPlayerTwo().transform.GetChild(0).position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb2d.MoveRotation(Mathf.LerpAngle(rb2d.rotation, angle, rotateSpeed * Time.fixedDeltaTime));
+        Vector2 direction = transform.position - playerManager.GetPlayerTwo().transform.position;
+        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        //rb2d.MoveRotation(Mathf.LerpAngle(rb2d.rotation, angle, rotateSpeed * Time.fixedDeltaTime));
+        transform.right = direction;
 
         if (playerManager.IsJoint)
         {
