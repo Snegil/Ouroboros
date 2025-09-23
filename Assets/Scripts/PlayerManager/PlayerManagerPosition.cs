@@ -12,10 +12,9 @@ public class PlayerManagerPosition : MonoBehaviour
     float rotateSpeed = 10f;
 
     CapsuleCollider2D playerManagerCollider;
-    [Space, SerializeField, Header("Max Collider X Size when joint")]
-    float colliderMaxXSize = 2f;
-    [SerializeField, Header("Min Collider X Size when joint")]
-    float colliderMinXSize = 1f;
+
+    [SerializeField]
+    AnimationCurve sizeCurve;
 
     void Start()
     {
@@ -35,7 +34,8 @@ public class PlayerManagerPosition : MonoBehaviour
 
         if (playerManager.IsJoint)
         {
-            playerManagerCollider.size = new Vector2(Mathf.Clamp(playerManager.DistanceBetweenPlayers(), colliderMinXSize, colliderMaxXSize), playerManagerCollider.size.y);
+            Debug.Log(playerManager.DistanceBetweenPlayers());
+            playerManagerCollider.size = new Vector2(sizeCurve.Evaluate(playerManager.DistanceBetweenPlayers()), playerManagerCollider.size.y);
         }
     }
 }

@@ -28,5 +28,5 @@ public class DoorButtonChildConstraints : MonoBehaviour
         {
             rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         }
-    }
+    }   
 }
