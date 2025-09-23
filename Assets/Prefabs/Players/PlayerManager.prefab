@@ -165,9 +165,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  rotateSpeed: 10
-  colliderMaxXSize: 3
-  colliderMinXSize: 0.5
+  rotateSpeed: 15
+  sizeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.86323255
+      value: 0.5130582
+      inSlope: 0.51970726
+      outSlope: 0.51970726
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.08125989
+    - serializedVersion: 3
+      time: 4.832148
+      value: 3.702831
+      inSlope: 0.80368876
+      outSlope: 0.80368876
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &7571126313081819413
 MonoBehaviour:
   m_ObjectHideFlags: 0
