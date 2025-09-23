@@ -34,7 +34,6 @@ public class PlayerManagerPosition : MonoBehaviour
 
         if (playerManager.IsJoint)
         {
-            Debug.Log(playerManager.DistanceBetweenPlayers());
             playerManagerCollider.size = new Vector2(sizeCurve.Evaluate(playerManager.DistanceBetweenPlayers()), playerManagerCollider.size.y);
         }
     }

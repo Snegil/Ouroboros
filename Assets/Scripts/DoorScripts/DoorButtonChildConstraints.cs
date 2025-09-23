@@ -24,9 +24,8 @@ public class DoorButtonChildConstraints : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag(doorButtonSpecificPlayer.Player.tag))
-        {
-            rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-        }
+        if (collision == null || collision.CompareTag(doorButtonSpecificPlayer.Player.tag)) return;
+        
+        rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
     }   
 }

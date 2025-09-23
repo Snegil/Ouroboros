@@ -47,7 +47,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         setStunTimer = stunTimer;
-
+        stunTimer = 0f;
+        
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
         towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
@@ -80,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
             rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);
 
             animator.SetBool("Walking", true);
+            animator.speed = Mathf.Clamp(Mathf.Abs(rb2d.linearVelocityX), 0.2f, maxSpeed);
             transform.right = input.x > 0 ? Vector2.left : Vector2.right;
             towSpringJoint2D.connectedAnchor = input.x > 0 ? new(-originalTowPosition.x, originalTowPosition.y) : new(originalTowPosition.x, originalTowPosition.y);
             return;
