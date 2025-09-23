@@ -21,6 +21,9 @@ public class DoorTimed : MonoBehaviour
     bool isOpen = false;
     bool doOnce = false;
 
+    bool isMoving = false;
+    public bool IsMoving() { return isMoving; }
+    
     void Start()
     {
         if (doOnce) { return; }
@@ -49,11 +52,13 @@ public class DoorTimed : MonoBehaviour
         if (isOpen)
         {
             t += lerpSpeed * Time.deltaTime;
+            isMoving = true;
             transform.position = Vector2.MoveTowards(transform.position, closeLocation, t);
             if (Vector2.Distance(transform.position, closeLocation) < distanceTolerance)
             {
                 isOpen = false;
                 timeDoorStaysOpen = setTimeDoorStaysOpen;
+                isMoving = false;
                 enabled = false;
             }
             return;

@@ -15,6 +15,6 @@ public class CircularSaw : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        playerManager.HazardSplit(transform.position, explosiveForce, upwardForce, collision.gameObject);
+        playerManager.HazardSplit(transform.position, collision.gameObject, explosiveForce, upwardForce);
     }
 }

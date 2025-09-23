@@ -18,9 +18,12 @@ public class DoorOpenClose : MonoBehaviour
 
     bool doOnce = false;
 
+    bool isMoving = false;
+    public bool IsMoving() { return isMoving; }
+    
     void Start()
     {
-        if(doOnce) { return; }
+        if (doOnce) { return; }
         openLocation += (Vector2)transform.position;
         closeLocation += (Vector2)transform.position;
         doOnce = true;
@@ -32,12 +35,14 @@ public class DoorOpenClose : MonoBehaviour
         {
             isOpen = !isOpen;
             t = 0;
-            enabled = false;
+            isMoving = false;
+            enabled = false;            
             return;
         }
 
         t += Time.deltaTime * lerpSpeed;
-
+        isMoving = true;
         transform.position = Vector2.MoveTowards(transform.position, isOpen ? closeLocation : openLocation, t);
     }
+
 }
