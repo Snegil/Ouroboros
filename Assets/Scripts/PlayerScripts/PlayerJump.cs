@@ -53,6 +53,6 @@ public class PlayerJump : MonoBehaviour
     void Jumping()
     {
         //rb2d.linearVelocityY = jumpForce;
-        rb2d.AddForce(transform.up * jumpForce, ForceMode2D.Force);
+        rb2d.AddForce(GroundCheck().normal * jumpForce, ForceMode2D.Force);
     }
 }

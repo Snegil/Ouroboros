@@ -15,9 +15,10 @@ public class SceneTransition : MonoBehaviour
     }
     IEnumerator SceneChange(string sceneName)
     {
-        yield return new WaitForSeconds(transitionTime);
-        AudioListener.pause = false;
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        yield return new WaitForSeconds(transitionTime);
+        AudioListener.pause = false;        
+        Debug.Log("Changing Scene to " + sceneName);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);        
     }
 }

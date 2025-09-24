@@ -35,7 +35,12 @@ public class PlayerHPManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (vignette == null) return;
+        if (vignette == null)
+        {
+            Debug.LogWarning("No vignette assigned to " + gameObject.name + ", skipping HP update.");
+            return;
+        }
+        
         if (dying) return;
 
         if (hp <= 0f)

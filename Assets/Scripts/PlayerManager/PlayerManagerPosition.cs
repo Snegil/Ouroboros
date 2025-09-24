@@ -8,8 +8,8 @@ public class PlayerManagerPosition : MonoBehaviour
 
     [SerializeField]
     float moveSpeed = 5f;
-    [SerializeField]
-    float rotateSpeed = 10f;
+    // [SerializeField]
+    // float rotateSpeed = 10f;
 
     CapsuleCollider2D playerManagerCollider;
 
