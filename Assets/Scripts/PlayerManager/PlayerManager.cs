@@ -155,7 +155,7 @@ public class PlayerManager : MonoBehaviour
         if (affectedParty == gameObject)
         {
             SplitPlayers();
-            ExplosiveForce(hazardLocation, explosiveForceAmount, upwardForce);
+            ExplodeBoth(hazardLocation, explosiveForceAmount, upwardForce);
             playerOne.GetComponent<PlayerMovement>().ActivateStunTimer();
             playerTwo.GetComponent<PlayerMovement>().ActivateStunTimer();
             return;
@@ -166,7 +166,7 @@ public class PlayerManager : MonoBehaviour
             return;
         }
 
-        LimitedExplosiveForce(hazardLocation, explosiveForceAmount, upwardForce, affectedParty);
+        ExplodeOne(hazardLocation, explosiveForceAmount, upwardForce, affectedParty);
 
         if (affectedParty.GetComponent<PlayerManager>() == null) return;
 
@@ -175,7 +175,7 @@ public class PlayerManager : MonoBehaviour
 
 
     // Push both players with a force away from the origin.
-    public void ExplosiveForce(Transform hazardlocation, float explosiveForceAmount, float upwardForce)
+    public void ExplodeBoth(Transform hazardlocation, float explosiveForceAmount, float upwardForce)
     {
         Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation.position).normalized;
         Vector2 directionToPlayerTwo = (playerTwo.transform.position - hazardlocation.position).normalized;
@@ -186,7 +186,7 @@ public class PlayerManager : MonoBehaviour
     }
 
     // Push a specific gameobject with a force away from the origin.
-    public void LimitedExplosiveForce(Transform hazardlocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
+    public void ExplodeOne(Transform hazardlocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
     {
         Vector2 directionToAffectedParty = (affectedParty.transform.position - hazardlocation.position).normalized;
         directionToAffectedParty.y = hazardlocation.up.normalized.y;
