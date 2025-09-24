@@ -13,8 +13,8 @@ public class CircularSaw : MonoBehaviour
         playerManager = GameObject.FindWithTag("PlayerManager").GetComponent<PlayerManager>();
     }
 
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        playerManager.HazardSplit(transform.position, collision.gameObject, explosiveForce, upwardForce);
+        playerManager.HazardSplit(transform, collision.gameObject, explosiveForce, upwardForce);
     }
 }

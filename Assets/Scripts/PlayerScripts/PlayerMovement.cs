@@ -65,8 +65,12 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        RaycastHit2D floorHit = Physics2D.Raycast(transform.position, -transform.up, floorCheckDistance, layerMask);
+        RaycastHit2D floorHit = Physics2D.Raycast(transform.position, -Vector2.up, floorCheckDistance, layerMask);
         if (visualiseRaycast) Debug.DrawRay(transform.position, -transform.up * floorCheckDistance, Color.green, 1f);
+        if (visualiseRaycast && floorHit)
+        {
+            Debug.DrawRay(floorHit.point, floorHit.normal * 4f, Color.blue, 1f);
+        }
         //transform.up = floorHit ? floorHit.normal : Vector2.up;
         if (floorHit)
         {

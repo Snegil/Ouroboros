@@ -25,6 +25,8 @@ public class PlayerHPManager : MonoBehaviour
 
     bool dying = false;
 
+    int debugLines = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,8 +45,9 @@ public class PlayerHPManager : MonoBehaviour
         
         if (dying) return;
 
-        if (hp <= 0f)
+        if (hp <= 0f && debugLines < 5)
         {
+            debugLines++;
             Debug.LogWarning("When in doubt, look intelligent.");
             PlayerDeath();
         }

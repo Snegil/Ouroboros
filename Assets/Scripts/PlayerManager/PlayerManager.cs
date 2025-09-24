@@ -141,7 +141,7 @@ public class PlayerManager : MonoBehaviour
     // Apply explosive force to the players and split them if they are jointed.
     // If the affected party is not the playermanager, only apply force to that game.
     // This is used by Sawblade and door.
-    public void HazardSplit(Vector3 hazardLocation, GameObject affectedParty, float explosiveForceAmount = 31415, float upwardForce = 31415)
+    public void HazardSplit(Transform hazardLocation, GameObject affectedParty, float explosiveForceAmount = 31415, float upwardForce = 31415)
     {
         if (explosiveForceAmount == 31415)
         {
@@ -175,22 +175,24 @@ public class PlayerManager : MonoBehaviour
 
 
     // Push both players with a force away from the origin.
-    public void ExplosiveForce(Vector3 hazardlocation, float explosiveForceAmount, float upwardForce)
+    public void ExplosiveForce(Transform hazardlocation, float explosiveForceAmount, float upwardForce)
     {
-        Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation).normalized;
-        Vector2 directionToPlayerTwo = (playerTwo.transform.position - hazardlocation).normalized;
-        directionToPlayerOne.y = upwardForce;
-        directionToPlayerTwo.y = upwardForce;
+        Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation.position).normalized;
+        Vector2 directionToPlayerTwo = (playerTwo.transform.position - hazardlocation.position).normalized;
+        directionToPlayerOne.y = upwardForce * hazardlocation.up.normalized.y;
+        directionToPlayerTwo.y = upwardForce * hazardlocation.up.normalized.y;
         playerOne.GetComponent<Rigidbody2D>().AddForce(directionToPlayerOne * explosiveForceAmount, ForceMode2D.Impulse);
         playerTwo.GetComponent<Rigidbody2D>().AddForce(directionToPlayerTwo * explosiveForceAmount, ForceMode2D.Impulse);
     }
 
     // Push a specific gameobject with a force away from the origin.
-    public void LimitedExplosiveForce(Vector3 hazardlocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
+    public void LimitedExplosiveForce(Transform hazardlocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
     {
-        Vector2 directionToAffectedParty = (affectedParty.transform.position - hazardlocation).normalized;
-        directionToAffectedParty.y = upwardForce;
-        affectedParty.GetComponent<Rigidbody2D>().AddForce(directionToAffectedParty * explosiveForceAmount, ForceMode2D.Impulse);
+        Vector2 directionToAffectedParty = (affectedParty.transform.position - hazardlocation.position).normalized;
+        directionToAffectedParty.y = hazardlocation.up.normalized.y;
+        Vector2 explosiveForce = new(directionToAffectedParty.x * explosiveForceAmount, directionToAffectedParty.y * upwardForce);
+        
+        affectedParty.GetComponent<Rigidbody2D>().AddForce(explosiveForce, ForceMode2D.Impulse);
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -198,7 +200,7 @@ public class PlayerManager : MonoBehaviour
         if (collision.GetComponent<DoorTimed>() != null && collision.GetComponent<DoorTimed>().IsMoving() || collision.GetComponent<DoorOpenClose>() != null && collision.GetComponent<DoorOpenClose>().IsMoving())
         {
             Debug.Log("SPLIT");
-            HazardSplit(collision.transform.position, gameObject);
+            HazardSplit(collision.transform, gameObject);
         }
     }
 }
