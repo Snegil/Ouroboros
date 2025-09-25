@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     LineRenderer towLineRenderer;
     Vector2 towLineRendererScale = Vector2.zero;
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

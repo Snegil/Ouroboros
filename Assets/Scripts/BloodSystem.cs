@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BloodSystem : MonoBehaviour
 {
-    [SerializeField, Header("THE TOW BAR OF THE PLAYER THIS SHOULD FOLLOW!")]
     Transform objectToMoveTo;
+    public Transform ObjectToMoveTo { set { objectToMoveTo = value; } }
 
     ParticleSystem bloodParticleSystem;
     ParticleSystem.EmissionModule emissionModule;

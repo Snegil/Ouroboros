@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -27,7 +26,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Header("The upward force applied to the players when hit by a hazard.")]
     float hazardUpwardForce = 2f;
 
-    List<BloodSystem> bloodSystems = new();
+    BloodSystem[] bloodSystems;
+    bool gotBloodSystems = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -41,11 +41,18 @@ public class PlayerManager : MonoBehaviour
 
         playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
         playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
-
-        bloodSystems.Add(GameObject.FindGameObjectWithTag("PlayerBlood0").GetComponent<BloodSystem>());
-        bloodSystems.Add(GameObject.FindGameObjectWithTag("PlayerBlood1").GetComponent<BloodSystem>());
     }
+     void Start()
+     {
+         GameObject[] bloodSystemGameObjects = GameObject.FindGameObjectsWithTag("PlayerBlood");
+      
+         bloodSystems = new BloodSystem[bloodSystemGameObjects.Length];
 
+         for (int i = 0; i < bloodSystemGameObjects.Length; i++)
+         {
+             bloodSystems[i] = bloodSystemGameObjects[i].GetComponent<BloodSystem>();
+         }
+     }
     public GameObject GetPlayerOne()
     {
         return playerOne;
