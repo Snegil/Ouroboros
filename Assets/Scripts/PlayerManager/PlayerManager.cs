@@ -45,14 +45,14 @@ public class PlayerManager : MonoBehaviour
     }
     void Update()
     {
-        if (playerOne.transform.position.x < playerTwo.transform.position.x)
-        {
-            spriteRenderer.flipY = true;
-        }
-        else
-        {
-            spriteRenderer.flipY = false;
-        }
+        // if (playerOne.transform.position.x < playerTwo.transform.position.x)
+        // {
+        //     spriteRenderer.flipY = true;
+        // }
+        // else
+        // {
+        //     spriteRenderer.flipY = false;
+        // }
     }
 
     public GameObject GetPlayerOne()
