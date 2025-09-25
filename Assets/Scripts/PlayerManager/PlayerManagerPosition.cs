@@ -30,16 +30,9 @@ public class PlayerManagerPosition : MonoBehaviour
     {
         //Vector2 direction = (transform.position - playerManager.GetPlayerTwo().transform.position).normalized;
         //transform.right = direction;
-        // Calculate the direction vector from shooter to target
         Vector3 direction = transform.position - playerManager.GetPlayerTwo().transform.position;
-
-        // Calculate the angle needed to rotate the shooter to face the target
-        // This assumes your sprites are oriented to face right or up by default
-        // and you want to rotate around the Z-axis (the camera's forward axis)
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        // Apply the rotation around the Z-axis
-        transform.rotation = Quaternion.Euler(0, 0, angle); // Subtract 90 if sprite faces upwards by default
+        transform.rotation = Quaternion.Euler(0, 0, angle);
         if (angle > 90 || angle < -90)
         {
             spriteRenderer.flipY = true;
