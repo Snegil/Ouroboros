@@ -112,7 +112,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e728460f0dcef3147a8258a0c1ab47a0, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -178,14 +178,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abd59d14b806b845977bb8dd89ddb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualiseRaycast: 1
+  visualiseRaycast: 0
   raycastOffset: {x: 0, y: 0}
   raycastOrigin: {fileID: 4336961861181461113}
   movementSpeed: 130
-  maxSpeed: 6
+  maxSpeed: 5
+  maxAnimationSpeed: 3
+  minAnimationSpeed: 0.2
   airMovementMultiplier: 0.1
   animator: {fileID: 4498733281731325395}
-  wallCheckDistance: 0.1
+  floorCheckDistance: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 4160
@@ -468,7 +470,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a7c14836353de15499e6efefeadd483f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -520,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 2948263732333923388}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 0.013, z: 0}
+  m_LocalPosition: {x: 0.088, y: 0.013, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -784,7 +786,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.55
+        value: 0.60833436
         inSlope: 0
         outSlope: 0
         tangentMode: 0
