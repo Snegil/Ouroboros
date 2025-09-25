@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -27,6 +26,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Header("The upward force applied to the players when hit by a hazard.")]
     float hazardUpwardForce = 2f;
 
+    BloodSystem[] bloodSystems;
+    bool gotBloodSystems = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -40,21 +41,18 @@ public class PlayerManager : MonoBehaviour
 
         playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
         playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
-        //Debug.Log(playerOne);
-        //Debug.Log(playerTwo);
     }
-    void Update()
-    {
-        // if (playerOne.transform.position.x < playerTwo.transform.position.x)
-        // {
-        //     spriteRenderer.flipY = true;
-        // }
-        // else
-        // {
-        //     spriteRenderer.flipY = false;
-        // }
-    }
+     void Start()
+     {
+         GameObject[] bloodSystemGameObjects = GameObject.FindGameObjectsWithTag("PlayerBlood");
+      
+         bloodSystems = new BloodSystem[bloodSystemGameObjects.Length];
 
+         for (int i = 0; i < bloodSystemGameObjects.Length; i++)
+         {
+             bloodSystems[i] = bloodSystemGameObjects[i].GetComponent<BloodSystem>();
+         }
+     }
     public GameObject GetPlayerOne()
     {
         return playerOne;
@@ -106,6 +104,12 @@ public class PlayerManager : MonoBehaviour
         playerTwo.GetComponent<DistanceJoint2D>().enabled = false;
         playerOneTowPoint.SetActive(true);
         playerTwoTowPoint.SetActive(true);
+        foreach (BloodSystem bloodSystem in bloodSystems)
+        {
+            if (bloodSystem == null) return;
+            
+            bloodSystem.EnableBlood();
+        }
         GetComponent<CapsuleCollider2D>().enabled = false;
     }
     public void JoinPlayers()
@@ -135,6 +139,12 @@ public class PlayerManager : MonoBehaviour
         playerTwo.GetComponent<DistanceJoint2D>().enabled = true;
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
+        foreach (BloodSystem bloodSystem in bloodSystems)
+        {
+            if (bloodSystem == null) return;
+            
+            bloodSystem.DisableBlood();
+        }
         GetComponent<CapsuleCollider2D>().enabled = true;
     }
 

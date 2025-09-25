@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 7629607819450712960}
   - component: {fileID: 5381100248913151867}
   - component: {fileID: 8547721519097212607}
+  - component: {fileID: -5728792631963864818}
   m_Layer: 9
   m_Name: PlayerTwo
   m_TagString: PlayerTwo
@@ -194,6 +195,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4160
   stunTimer: 0.5
+  towLineRenderer: {fileID: 0}
 --- !u!114 &1178869204486896250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +501,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.006438316, y: 0.000000029034819}
   m_Size: {x: 0.58087355, y: 0.40598804}
   m_Direction: 1
+--- !u!114 &-5728792631963864818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2339612582525937782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3d732e271277944a0ecdb2ceac1765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSystemPrefab: {fileID: 4868888361981317287, guid: 2fd59252508030748b316ad3a469b82a, type: 3}
 --- !u!1 &2948263732333923388
 GameObject:
   m_ObjectHideFlags: 0

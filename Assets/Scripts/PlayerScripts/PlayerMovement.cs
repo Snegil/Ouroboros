@@ -56,16 +56,23 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 originalTowPosition;
 
+    [SerializeField]
+    LineRenderer towLineRenderer;
+    Vector2 towLineRendererScale = Vector2.zero;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         setStunTimer = stunTimer;
         stunTimer = 0f;
-        
+
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
         towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
         originalTowPosition = towSpringJoint2D.connectedAnchor;
+
+        towLineRendererScale = towLineRenderer.textureScale;
+        towLineRenderer.textureScale = new Vector2(towLineRendererScale.x, -towLineRendererScale.y);
     }
     void FixedUpdate()
     {
@@ -105,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
             rb2d.AddForce((Vector2)(movementSpeed * speedMultiplier * projectedOnGround), ForceMode2D.Force);
             rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);
             transform.localScale = new Vector3(input.x > 0 ? -1 : 1, 1, 1);
-
+            towLineRenderer.textureScale = new Vector2(1, input.x > 0 ? towLineRendererScale.y : -towLineRendererScale.y);
             animator.SetBool("Walking", true);
             animator.speed = Mathf.Clamp(Mathf.Abs(rb2d.linearVelocityX), minAnimationSpeed, maxAnimationSpeed);
             return;

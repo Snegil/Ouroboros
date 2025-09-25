@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DoorOpenClose : MonoBehaviour
@@ -21,6 +22,8 @@ public class DoorOpenClose : MonoBehaviour
     bool isMoving = false;
     public bool IsMoving() { return isMoving; }
     
+    bool coroutineRunning = false;
+
     void Start()
     {
         if (doOnce) { return; }
@@ -31,12 +34,13 @@ public class DoorOpenClose : MonoBehaviour
 
     void Update()
     {
+        if (coroutineRunning) return;
+
         if (Vector2.Distance(transform.position, isOpen ? closeLocation : openLocation) < distanceTolerance)
         {
             isOpen = !isOpen;
             t = 0;
-            isMoving = false;
-            enabled = false;            
+            StartCoroutine(DisableIsMoving());
             return;
         }
 
@@ -44,5 +48,12 @@ public class DoorOpenClose : MonoBehaviour
         isMoving = true;
         transform.position = Vector2.MoveTowards(transform.position, isOpen ? closeLocation : openLocation, t);
     }
-
+    IEnumerator DisableIsMoving()
+    {
+        coroutineRunning = true;
+        yield return new WaitForSeconds(0.1f);
+        isMoving = false;
+        coroutineRunning = false;
+        enabled = false;
+    }
 }
