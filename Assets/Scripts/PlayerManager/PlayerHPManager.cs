@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -61,7 +62,7 @@ public class PlayerHPManager : MonoBehaviour
             hp = Mathf.Clamp(hp + hpRegen * Time.deltaTime, 0f, maxHP);
         }
 
-        vignette.color = new Color(1f, 1f, 1f, 1f - (hp / maxHP));
+        if (allowDeath) vignette.color = new Color(1f, 1f, 1f, 1f - (hp / maxHP));
     }
     public float HP
     {

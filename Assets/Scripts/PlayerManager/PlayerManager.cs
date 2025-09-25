@@ -179,8 +179,10 @@ public class PlayerManager : MonoBehaviour
     {
         Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation.position).normalized;
         Vector2 directionToPlayerTwo = (playerTwo.transform.position - hazardlocation.position).normalized;
-        directionToPlayerOne.y = upwardForce * hazardlocation.up.normalized.y;
-        directionToPlayerTwo.y = upwardForce * hazardlocation.up.normalized.y;
+        //directionToPlayerOne.y = upwardForce * hazardlocation.up.normalized.y;
+        directionToPlayerOne.y = upwardForce * (playerOne.transform.position.y > hazardlocation.position.y ? 1 : -1);
+        //directionToPlayerTwo.y = upwardForce * hazardlocation.up.normalized.y;
+        directionToPlayerTwo.y = upwardForce * (playerTwo.transform.position.y > hazardlocation.position.y ? 1 : -1);
         playerOne.GetComponent<Rigidbody2D>().AddForce(directionToPlayerOne * explosiveForceAmount, ForceMode2D.Impulse);
         playerTwo.GetComponent<Rigidbody2D>().AddForce(directionToPlayerTwo * explosiveForceAmount, ForceMode2D.Impulse);
     }
@@ -189,7 +191,8 @@ public class PlayerManager : MonoBehaviour
     public void ExplodeOne(Transform hazardlocation, float explosiveForceAmount, float upwardForce, GameObject affectedParty)
     {
         Vector2 directionToAffectedParty = (affectedParty.transform.position - hazardlocation.position).normalized;
-        directionToAffectedParty.y = hazardlocation.up.normalized.y;
+        //directionToAffectedParty.y = hazardlocation.up.normalized.y;
+        directionToAffectedParty.y = upwardForce * (affectedParty.transform.position.y > hazardlocation.position.y ? 1 : -1);
         Vector2 explosiveForce = new(directionToAffectedParty.x * explosiveForceAmount, directionToAffectedParty.y * upwardForce);
         
         affectedParty.GetComponent<Rigidbody2D>().AddForce(explosiveForce, ForceMode2D.Impulse);

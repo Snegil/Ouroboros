@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AlfonsScene.unity
     guid: 8cac49611d425a34c8a1660f90fcf710
   - enabled: 1
+    path: Assets/Scenes/EriksScene.unity
+    guid: 6dc08137993190a4ca71c47785957915
+  - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: d33cb9c2606206a44b234471378e9f9d
   m_configObjects:
