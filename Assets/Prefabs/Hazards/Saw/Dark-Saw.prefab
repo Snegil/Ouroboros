@@ -124,9 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93df68e7db136a046b5b67ca21f65a2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1000
-  explosiveForce: 10
-  upwardForce: 1.2
+  explosiveForce: 40
+  upwardForce: 8
 --- !u!58 &8918543353948766848
 CircleCollider2D:
   m_ObjectHideFlags: 0
