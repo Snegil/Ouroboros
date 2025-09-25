@@ -30,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     [Space, SerializeField, Header("The multiplier for when not on ground.")]
     float airMovementMultiplier = 0.5f;
 
+    [SerializeField, Header("The distance the raycast checks for a slope")]
+    float slopeCheckDistance = 0.1f;
+
     float speedMultiplier = 1f;    
     Vector2 input;
 
@@ -86,18 +89,14 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         
-        /*
-        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, -transform.right, wallCheckDistance, layerMask);
-        if (visualiseRaycast) Debug.DrawRay(raycastOrigin.position, -transform.right * wallCheckDistance, Color.red, 1f);
+        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, -transform.right, slopeCheckDistance, layerMask);
+        if (visualiseRaycast) Debug.DrawRay(raycastOrigin.position, -transform.right * slopeCheckDistance, Color.red, 1f);
         
         if (hit.collider != null && isMoving)
         {
-            rb2d.linearVelocityX = 0;
-            //transform.right = input.x > 0 ? Vector2.left : Vector2.right;
-            animator.SetBool("Walking", false);
-            return;
+            rb2d.AddForce(transform.up, ForceMode2D.Impulse); 
         }
-        */
+
         if (isMoving)
         {
             speedMultiplier = playerJump.isGrounded() ? 1f : airMovementMultiplier;
