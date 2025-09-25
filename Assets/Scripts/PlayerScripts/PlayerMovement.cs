@@ -32,7 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField, Header("The distance the raycast checks for a slope")]
     float slopeCheckDistance = 0.1f;
-
+    [SerializeField]
+    float slopeForce = 1f;
     float speedMultiplier = 1f;    
     Vector2 input;
 
@@ -94,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (hit.collider != null && isMoving)
         {
-            rb2d.AddForce(transform.up, ForceMode2D.Impulse); 
+            rb2d.AddForce(slopeForce * transform.up, ForceMode2D.Impulse); 
         }
 
         if (isMoving)
