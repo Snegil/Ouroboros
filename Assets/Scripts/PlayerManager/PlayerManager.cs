@@ -27,6 +27,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Header("The upward force applied to the players when hit by a hazard.")]
     float hazardUpwardForce = 2f;
 
+    List<BloodSystem> bloodSystems = new();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -40,19 +41,9 @@ public class PlayerManager : MonoBehaviour
 
         playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
         playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
-        //Debug.Log(playerOne);
-        //Debug.Log(playerTwo);
-    }
-    void Update()
-    {
-        // if (playerOne.transform.position.x < playerTwo.transform.position.x)
-        // {
-        //     spriteRenderer.flipY = true;
-        // }
-        // else
-        // {
-        //     spriteRenderer.flipY = false;
-        // }
+
+        bloodSystems.Add(GameObject.FindGameObjectWithTag("PlayerBlood0").GetComponent<BloodSystem>());
+        bloodSystems.Add(GameObject.FindGameObjectWithTag("PlayerBlood1").GetComponent<BloodSystem>());
     }
 
     public GameObject GetPlayerOne()
@@ -106,6 +97,12 @@ public class PlayerManager : MonoBehaviour
         playerTwo.GetComponent<DistanceJoint2D>().enabled = false;
         playerOneTowPoint.SetActive(true);
         playerTwoTowPoint.SetActive(true);
+        foreach (BloodSystem bloodSystem in bloodSystems)
+        {
+            if (bloodSystem == null) return;
+            
+            bloodSystem.EnableBlood();
+        }
         GetComponent<CapsuleCollider2D>().enabled = false;
     }
     public void JoinPlayers()
@@ -135,6 +132,12 @@ public class PlayerManager : MonoBehaviour
         playerTwo.GetComponent<DistanceJoint2D>().enabled = true;
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
+        foreach (BloodSystem bloodSystem in bloodSystems)
+        {
+            if (bloodSystem == null) return;
+            
+            bloodSystem.DisableBlood();
+        }
         GetComponent<CapsuleCollider2D>().enabled = true;
     }
 

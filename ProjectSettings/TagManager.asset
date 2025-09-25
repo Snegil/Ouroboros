@@ -10,6 +10,8 @@ TagManager:
   - Towbar
   - PauseMenu
   - PropTrigger
+  - PlayerBlood0
+  - PlayerBlood1
   layers:
   - Default
   - TransparentFX

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DoorTimed : MonoBehaviour
@@ -23,7 +24,9 @@ public class DoorTimed : MonoBehaviour
 
     bool isMoving = false;
     public bool IsMoving() { return isMoving; }
-    
+
+    bool coroutineRunning = false;
+
     void Start()
     {
         if (doOnce) { return; }
@@ -35,6 +38,8 @@ public class DoorTimed : MonoBehaviour
 
     void Update()
     {
+        if (coroutineRunning) return; 
+        
         if (!isOpen)
         {
             t += lerpSpeed * Time.deltaTime;
@@ -58,10 +63,18 @@ public class DoorTimed : MonoBehaviour
             {
                 isOpen = false;
                 timeDoorStaysOpen = setTimeDoorStaysOpen;
-                isMoving = false;
-                enabled = false;
+                
+                StartCoroutine(DisableIsMoving());
             }
             return;
         }
+    }
+    IEnumerator DisableIsMoving()
+    {
+        coroutineRunning = true;
+        yield return new WaitForSeconds(0.1f);
+        isMoving = false;
+        coroutineRunning = false;
+        enabled = false;
     }
 }
