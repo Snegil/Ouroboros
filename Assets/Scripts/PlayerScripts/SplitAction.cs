@@ -13,14 +13,6 @@ public class SplitAction : MonoBehaviour
 
     public void SplitToggle(InputAction.CallbackContext context)
     {
-        if (context.canceled)
-        {
-            playerManager.ClearSplitAction();
-            return;
-        }
-        if (context.started)
-        {
-            playerManager.SplitAction();
-        }
+        playerManager.SplitAction();
     }
 }

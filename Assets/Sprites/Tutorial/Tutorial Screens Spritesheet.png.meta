@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 50746ec492bc6bf41b704880f2aab4a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4903248879576017613
+    second: Tutorial Screens Spritesheet_0
+  - first:
+      213: -6077080550020541757
+    second: Tutorial Screens Spritesheet_1
+  - first:
+      213: -3190471366627987693
+    second: Tutorial Screens Spritesheet_2
+  - first:
+      213: -4468896271157719518
+    second: Tutorial Screens Spritesheet_3
+  - first:
+      213: -8766815865268794087
+    second: Tutorial Screens Spritesheet_4
+  - first:
+      213: -7196880498392677717
+    second: Tutorial Screens Spritesheet_5
+  - first:
+      213: 2576286253315819220
+    second: Tutorial Screens Spritesheet_6
+  - first:
+      213: -4553183234503604767
+    second: Tutorial Screens Spritesheet_7
+  - first:
+      213: 7598421234197405658
+    second: Tutorial Screens Spritesheet_8
+  - first:
+      213: -8702680277332697446
+    second: Tutorial Screens Spritesheet_9
+  - first:
+      213: 1027895331425232871
+    second: Tutorial Screens Spritesheet_10
+  - first:
+      213: 4824742525235568882
+    second: Tutorial Screens Spritesheet_11
+  - first:
+      213: -6690797190006027039
+    second: Tutorial Screens Spritesheet_12
+  - first:
+      213: -473755804273865769
+    second: Tutorial Screens Spritesheet_13
+  - first:
+      213: -7390625181905518492
+    second: Tutorial Screens Spritesheet_14
+  - first:
+      213: 8703982212103403315
+    second: Tutorial Screens Spritesheet_15
+  - first:
+      213: 632961974686691343
+    second: Tutorial Screens Spritesheet_16
+  - first:
+      213: -6975335771517329929
+    second: Tutorial Screens Spritesheet_17
+  - first:
+      213: -6831809915126757678
+    second: Tutorial Screens Spritesheet_18
+  - first:
+      213: -1293027016775129683
+    second: Tutorial Screens Spritesheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skink-Breach
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcae570a0e6db0440800000000000000
+      internalID: 4903248879576017613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blank
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c21790007fd9aba0800000000000000
+      internalID: -6077080550020541757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warning-Saws
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f6516223b29b3d0800000000000000
+      internalID: -3190471366627987693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warning-Doors
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e8393c48a4bf1c0800000000000000
+      internalID: -4468896271157719518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Jump-0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d056b4b63065680800000000000000
+      internalID: -8766815865268794087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Jump-1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba24e52415b8f1c90800000000000000
+      internalID: -7196880498392677717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Jump-2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d68c9892bec0c320800000000000000
+      internalID: 2576286253315819220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Jump-3
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e50626d8f7dfc0c0800000000000000
+      internalID: -4553183234503604767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-split-0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf1f16bad3037960800000000000000
+      internalID: 7598421234197405658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-split-1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e59c3856ed93780800000000000000
+      internalID: -8702680277332697446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-split-2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e722ef9b51d34e00800000000000000
+      internalID: 1027895331425232871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-split-3
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0236d93cde4f240800000000000000
+      internalID: 4824742525235568882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Dying-0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec4281b7638523a0800000000000000
+      internalID: -6690797190006027039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Dying-1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db0af72b91ec69f0800000000000000
+      internalID: -473755804273865769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Dying-2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4600774ed893f6990800000000000000
+      internalID: -7390625181905518492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Dying-3
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337fdbbc4b1cac870800000000000000
+      internalID: 8703982212103403315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Regenerating-0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00b789ff8bb8c800800000000000000
+      internalID: 632961974686691343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Regenerating-1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd52ad9211a23f90800000000000000
+      internalID: -6975335771517329929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Regenerating-2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6c0e324198031a0800000000000000
+      internalID: -6831809915126757678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skink-Regenerating-3
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5a22c67ce3e0ee0800000000000000
+      internalID: -1293027016775129683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: be879bc1b3847b340b39157904d046c4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blank: -6077080550020541757
+      Skink-Breach: 4903248879576017613
+      Skink-Dying-0: -6690797190006027039
+      Skink-Dying-1: -473755804273865769
+      Skink-Dying-2: -7390625181905518492
+      Skink-Dying-3: 8703982212103403315
+      Skink-Jump-0: -8766815865268794087
+      Skink-Jump-1: -7196880498392677717
+      Skink-Jump-2: 2576286253315819220
+      Skink-Jump-3: -4553183234503604767
+      Skink-Regenerating-0: 632961974686691343
+      Skink-Regenerating-1: -6975335771517329929
+      Skink-Regenerating-2: -6831809915126757678
+      Skink-Regenerating-3: -1293027016775129683
+      Skink-split-0: 7598421234197405658
+      Skink-split-1: -8702680277332697446
+      Skink-split-2: 1027895331425232871
+      Skink-split-3: 4824742525235568882
+      Warning-Doors: -4468896271157719518
+      Warning-Saws: -3190471366627987693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
