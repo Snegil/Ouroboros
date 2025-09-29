@@ -1,12 +1,14 @@
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Unity.Mathematics;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    GameObject playerOne;
+    List<GameObject> players = new();
+
     GameObject playerOneTowPoint;
-    GameObject playerTwo;
     GameObject playerTwoTowPoint;
     PlayerLineManager lineManager;
     SpriteRenderer playerManagerSpriteRenderer;
@@ -15,10 +17,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Header("THE DISTANCE FOR THE PLAYERS TO CONNECT!")]
     float connectionDistance = 10f;
     public bool IsJoint { get { return isJoint; } }
-
-    List<bool> splitActions = new();
-
-    SpriteRenderer spriteRenderer;
 
     [Space, SerializeField, Header("The force applied to the players when hit by a hazard.")]
     float hazardExplosiveForceAmount = 5f;
@@ -36,17 +34,16 @@ public class PlayerManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        players.Add(GameObject.FindWithTag("PlayerOne"));
+        players.Add(GameObject.FindWithTag("PlayerTwo"));
 
-        playerOne = GameObject.FindWithTag("PlayerOne");
-        playerTwo = GameObject.FindWithTag("PlayerTwo");
-        jointMaxDistance = playerOne.GetComponent<DistanceJoint2D>().distance;
+        jointMaxDistance = players[0].GetComponent<DistanceJoint2D>().distance;
 
         lineManager = gameObject.GetComponent<PlayerLineManager>();
         playerManagerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        playerOneTowPoint = playerOne.transform.GetChild(0).gameObject;
-        playerTwoTowPoint = playerTwo.transform.GetChild(0).gameObject;
+        playerOneTowPoint = players[0].transform.GetChild(0).gameObject;
+        playerTwoTowPoint = players[1].transform.GetChild(0).gameObject;
     }
      void Start()
      {
@@ -61,68 +58,69 @@ public class PlayerManager : MonoBehaviour
      }
     public GameObject GetPlayerOne()
     {
-        return playerOne;
+        return players[0];
     }
     public GameObject GetPlayerTwo()
     {
-        return playerTwo;
+        return players[1];
     }
     public Vector2 AveragePosition()
     {
-        return (playerOne.transform.position + playerTwo.transform.position) / 2f;
+        return (players[0].transform.position + players[1].transform.position) / 2f;
     }
     public float DistanceBetweenPlayers()
     {
-        return Vector2.Distance(playerOne.transform.position, playerTwo.transform.position);
+        return Vector2.Distance(players[0].transform.position, players[1].transform.position);
     }
     public float DistanceBetweenCentreAndPlayerOne()
     {
-        return Vector2.Distance(AveragePosition(), playerOne.transform.position);
+        return Vector2.Distance(AveragePosition(), players[0].transform.position);
     }
     public float DistanceBetweenCentreAndPlayerTwo()
     {
-        return Vector2.Distance(AveragePosition(), playerTwo.transform.position);
+        return Vector2.Distance(AveragePosition(), players[0].transform.position);
     }
+
     public void SplitAction()
     {
-        splitActions.Add(true);
-        if (splitActions.Count >= 1 && isJoint)
+        if (isJoint)
         {
             SplitPlayers();
         }
-        else if (splitActions.Count >= 1 && !isJoint)
+        else
         {
             JoinPlayers();
         }
     }
-    public void ClearSplitAction()
-    {
-        splitActions.Clear();
-    }
+    
     public void SplitPlayers()
     {
         isJoint = false;
         playerManagerSpriteRenderer.enabled = false;
         lineManager.DisableLines();
-        playerOne.GetComponent<SpringJoint2D>().enabled = false;
-        playerTwo.GetComponent<SpringJoint2D>().enabled = false;
-        playerOne.GetComponent<DistanceJoint2D>().distance = splitMaxDistance;
-        playerTwo.GetComponent<DistanceJoint2D>().distance = splitMaxDistance;
+
+        for (int i = 0; i < players.Count; i++)
+        {
+            players[i].GetComponent<SpringJoint2D>().enabled = false;
+            players[i].GetComponent<DistanceJoint2D>().distance = splitMaxDistance;
+        }
+
         playerOneTowPoint.SetActive(true);
         playerTwoTowPoint.SetActive(true);
         foreach (BloodSystem bloodSystem in bloodSystems)
         {
             if (bloodSystem == null) return;
-            
+
             bloodSystem.EnableBlood();
         }
         GetComponent<CapsuleCollider2D>().enabled = false;
     }
     public void JoinPlayers()
     {
-        RaycastHit2D raycastHits2D = Physics2D.Raycast(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized, connectionDistance);
-        Debug.DrawRay(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized * connectionDistance, Color.blue, 1f);
-        if (raycastHits2D.collider.CompareTag("PlayerTwo"))
+        RaycastHit2D raycastHit2D = Physics2D.Raycast(players[0].transform.position, (players[1].transform.position - players[0].transform.position).normalized, connectionDistance);
+        Debug.DrawRay(players[0].transform.position, (players[1].transform.position - players[0].transform.position).normalized * connectionDistance, Color.blue, 1f);
+        if (raycastHit2D.collider == null) return;
+        if (raycastHit2D.collider.CompareTag("PlayerTwo"))
         {
             ActivateJoin();
             return;
@@ -136,10 +134,12 @@ public class PlayerManager : MonoBehaviour
         transform.rotation = quaternion.identity;
         playerManagerSpriteRenderer.enabled = true;
         lineManager.EnableLines();
-        playerOne.GetComponent<SpringJoint2D>().enabled = true;
-        playerTwo.GetComponent<SpringJoint2D>().enabled = true;
-        playerOne.GetComponent<DistanceJoint2D>().distance = jointMaxDistance;
-        playerTwo.GetComponent<DistanceJoint2D>().distance = jointMaxDistance;
+
+        for (int i = 0; i < players.Count; i++)
+        {
+            players[i].GetComponent<SpringJoint2D>().enabled = true;
+            players[i].GetComponent<DistanceJoint2D>().distance = jointMaxDistance;            
+        }
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
         foreach (BloodSystem bloodSystem in bloodSystems)
@@ -154,6 +154,7 @@ public class PlayerManager : MonoBehaviour
     // Apply explosive force to the players and split them if they are jointed.
     // If the affected party is not the playermanager, only apply force to that game.
     // This is used by Sawblade and door.
+    // 31415 is just a random number to check if the parameters have been set by the caller or not. It just happens to be the first 5 digits of pi.
     public void HazardSplit(Transform hazardLocation, GameObject affectedParty, float explosiveForceAmount = 31415, float upwardForce = 31415)
     {
         if (explosiveForceAmount == 31415)
@@ -169,8 +170,10 @@ public class PlayerManager : MonoBehaviour
         {
             SplitPlayers();
             ExplodeBoth(hazardLocation, explosiveForceAmount, upwardForce);
-            playerOne.GetComponent<PlayerStunned>().ActivateStunTimer();
-            playerTwo.GetComponent<PlayerStunned>().ActivateStunTimer();
+            for (int i = 0; i < players.Count; i++)
+            {
+                players[i].GetComponent<PlayerStunned>().ActivateStunTimer();
+            }
             return;
         }
 
@@ -190,14 +193,20 @@ public class PlayerManager : MonoBehaviour
     // Push both players with a force away from the origin.
     public void ExplodeBoth(Transform hazardlocation, float explosiveForceAmount, float upwardForce)
     {
-        Vector2 directionToPlayerOne = (playerOne.transform.position - hazardlocation.position).normalized;
-        Vector2 directionToPlayerTwo = (playerTwo.transform.position - hazardlocation.position).normalized;
-        //directionToPlayerOne.y = upwardForce * hazardlocation.up.normalized.y;
-        directionToPlayerOne.y = upwardForce * (playerOne.transform.position.y > hazardlocation.position.y ? 1 : -1);
-        //directionToPlayerTwo.y = upwardForce * hazardlocation.up.normalized.y;
-        directionToPlayerTwo.y = upwardForce * (playerTwo.transform.position.y > hazardlocation.position.y ? 1 : -1);
-        playerOne.GetComponent<Rigidbody2D>().AddForce(directionToPlayerOne * explosiveForceAmount, ForceMode2D.Impulse);
-        playerTwo.GetComponent<Rigidbody2D>().AddForce(directionToPlayerTwo * explosiveForceAmount, ForceMode2D.Impulse);
+        List<Vector3> directions = new List<Vector3>
+        {
+            (players[0].transform.position - hazardlocation.position).normalized,
+            (players[1].transform.position - hazardlocation.position).normalized
+        };
+
+        directions[0] = new Vector3(directions[0].x, upwardForce * (players[0].transform.position.y > hazardlocation.position.y ? 1 : -1), directions[0].z);
+        directions[1] = new Vector3(directions[1].x, upwardForce * (players[1].transform.position.y > hazardlocation.position.y ? 1 : -1), directions[1].z);
+        for (int i = 0; i < players.Count; i++)
+        {
+            players[i].GetComponent<Rigidbody2D>().AddForce(directions[i]);
+        }
+        players[0].GetComponent<Rigidbody2D>().AddForce(directions[0] * explosiveForceAmount, ForceMode2D.Impulse);
+        players[1].GetComponent<Rigidbody2D>().AddForce(directions[1] * explosiveForceAmount, ForceMode2D.Impulse);
     }
 
     // Push a specific gameobject with a force away from the origin.
