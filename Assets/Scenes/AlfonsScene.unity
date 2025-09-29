@@ -7070,6 +7070,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7423468078563421365, guid: 8a2371e869022fa4392a2160d71b2438, type: 3}
+      propertyPath: delay
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7423468078563421365, guid: 8a2371e869022fa4392a2160d71b2438, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8741324139148250599, guid: 8a2371e869022fa4392a2160d71b2438, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.1873
@@ -7123,6 +7131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5728792631963864818, guid: cfba8dab7147a174dab79ead98156739, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1051811381973771810, guid: cfba8dab7147a174dab79ead98156739, type: 3}
       propertyPath: m_ConnectedRigidBody
       value: 
@@ -8050,6 +8062,10 @@ PrefabInstance:
     - target: {fileID: 5065740157351609505, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849801151087757613, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7328482017436306155, guid: 1dc9ebbd2dcf5e84c8db4d7b5ce1f53e, type: 3}
       propertyPath: m_Name

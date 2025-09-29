@@ -52,8 +52,6 @@ public class PlayerMovement : MonoBehaviour
 
     SpringJoint2D towSpringJoint2D;
 
-    Vector2 originalTowPosition;
-
     [SerializeField]
     LineRenderer towLineRenderer;
     Vector2 towLineRendererScale = Vector2.zero;
@@ -63,20 +61,26 @@ public class PlayerMovement : MonoBehaviour
     {
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
-        towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
-        originalTowPosition = towSpringJoint2D.connectedAnchor;
+        
+        if (transform.childCount > 0)
+        {
+            towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
+        }
 
         playerStunned = GetComponent<PlayerStunned>();
 
-        towLineRendererScale = towLineRenderer.textureScale;
-        towLineRenderer.textureScale = new Vector2(towLineRendererScale.x, -towLineRendererScale.y);
+        if (towLineRenderer != null)
+        {
+            towLineRendererScale = towLineRenderer.textureScale;
+            towLineRenderer.textureScale = new Vector2(towLineRendererScale.x, -towLineRendererScale.y);
+        }
     }
+
     void FixedUpdate()
     {
         RaycastHit2D floorHit = Physics2D.Raycast(transform.position, -Vector2.up, floorCheckDistance, layerMask);
         RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, -transform.right, slopeCheckDistance, layerMask);
 
-        //transform.up = floorHit ? floorHit.normal : Vector2.up;
         if (floorHit)
         {
             // Smoothly rotate to align with the floor normal
@@ -106,10 +110,44 @@ public class PlayerMovement : MonoBehaviour
             rb2d.AddForce((Vector2)(movementSpeed * speedMultiplier * projectedOnGround), ForceMode2D.Force);
             rb2d.linearVelocityX = Mathf.Clamp(rb2d.linearVelocityX, -maxSpeed, maxSpeed);
             transform.localScale = new Vector3(input.x > 0 ? -1 : 1, 1, 1);
-            towLineRenderer.textureScale = new Vector2(1, input.x > 0 ? towLineRendererScale.y : -towLineRendererScale.y);
-            animator.SetBool("Walking", true);
-            animator.speed = Mathf.Clamp(Mathf.Abs(rb2d.linearVelocityX), minAnimationSpeed, maxAnimationSpeed);
+            if (towLineRenderer != null)
+            {
+                towLineRenderer.textureScale = new Vector2(1, input.x > 0 ? towLineRendererScale.y : -towLineRendererScale.y);
+            }
+            if (animator != null)
+            {
+                animator.SetBool("Walking", floorHit.collider != null ? true : false);
+                animator.speed = Mathf.Clamp(Mathf.Abs(rb2d.linearVelocityX), minAnimationSpeed, maxAnimationSpeed);
+            }
             return;
+        }
+    }
+
+    public void Movement(InputAction.CallbackContext context)
+    {
+        // if (Time.timeScale == 0)
+        // {
+        //     input = Vector2.zero;
+        //     isMoving = false;
+        //     animator.SetBool("Walking", false);
+        //     return;
+        // }
+
+        input = context.ReadValue<Vector2>();
+        // If the input is cancelled, turn isMoving to false and set the x velocity to 0.
+        if (context.canceled)
+        {
+            isMoving = false;
+            if (animator != null)
+            {
+                animator.SetBool("Walking", false);
+            }
+            return;
+        }
+
+        if (context.started)
+        {
+            isMoving = true;
         }
     }
 
@@ -122,30 +160,5 @@ public class PlayerMovement : MonoBehaviour
 
         if (floorHit.collider != null) Debug.DrawRay(floorHit.point, floorHit.normal * 4f, Color.blue, 1f);
     }
-    public void Movement(InputAction.CallbackContext context)
-    {
-        if (Time.timeScale == 0)
-        {
-            input = Vector2.zero;
-            isMoving = false;
-            animator.SetBool("Walking", false);
-            return;
-        }
-
-        input = context.ReadValue<Vector2>();
-        // If the input is cancelled, turn isMoving to false and set the x velocity to 0.
-        if (context.canceled)
-        {
-            isMoving = false;
-            animator.SetBool("Walking", false);
-            return;
-        }
-
-        if (context.started)
-        {
-            isMoving = true;
-        }
-    }
-    
 
 }
