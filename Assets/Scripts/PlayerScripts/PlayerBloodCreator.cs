@@ -6,7 +6,7 @@ public class PlayerBloodCreator : MonoBehaviour
     GameObject bloodSystemPrefab;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         GameObject instantiated = Instantiate(bloodSystemPrefab, transform);
         instantiated.GetComponent<BloodSystem>().ObjectToMoveTo = transform.GetChild(0).transform;

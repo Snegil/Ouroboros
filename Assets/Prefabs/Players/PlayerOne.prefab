@@ -695,6 +695,7 @@ GameObject:
   - component: {fileID: 6934222915369604125}
   - component: {fileID: 5611619760182044639}
   - component: {fileID: 6221215433625555876}
+  - component: {fileID: 644395555225162997}
   - component: {fileID: 8543342939103384689}
   - component: {fileID: 1169639586525963345}
   - component: {fileID: 3463990099825750027}
@@ -876,8 +877,20 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4224
+  towLineRenderer: {fileID: 8835907755279067456}
+--- !u!114 &644395555225162997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328482017436306155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efdc9c581773844386ebb6f4bfab8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   stunTimer: 0.5
-  towLineRenderer: {fileID: 0}
 --- !u!114 &8543342939103384689
 MonoBehaviour:
   m_ObjectHideFlags: 0

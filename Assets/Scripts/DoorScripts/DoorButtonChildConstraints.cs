@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DoorButtonChildConstraints : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class DoorButtonChildConstraints : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision == null)
+        {
+            return;
+        }
+
         if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
         {
             rb2d.constraints = RigidbodyConstraints2D.None;
@@ -28,6 +34,11 @@ public class DoorButtonChildConstraints : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision == null)
+        {
+            return;
+        }
+
         if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
         {
             StartCoroutine(WaitToFreeze());

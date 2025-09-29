@@ -27,7 +27,6 @@ public class PlayerManager : MonoBehaviour
     float hazardUpwardForce = 2f;
 
     BloodSystem[] bloodSystems;
-    bool gotBloodSystems = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -166,8 +165,8 @@ public class PlayerManager : MonoBehaviour
         {
             SplitPlayers();
             ExplodeBoth(hazardLocation, explosiveForceAmount, upwardForce);
-            playerOne.GetComponent<PlayerMovement>().ActivateStunTimer();
-            playerTwo.GetComponent<PlayerMovement>().ActivateStunTimer();
+            playerOne.GetComponent<PlayerStunned>().ActivateStunTimer();
+            playerTwo.GetComponent<PlayerStunned>().ActivateStunTimer();
             return;
         }
 
@@ -180,7 +179,7 @@ public class PlayerManager : MonoBehaviour
 
         if (affectedParty.GetComponent<PlayerManager>() == null) return;
 
-        affectedParty.GetComponent<PlayerMovement>().ActivateStunTimer();
+        affectedParty.GetComponent<PlayerStunned>().ActivateStunTimer();
     }
 
 

@@ -48,9 +48,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Header("THE LAYER THAT THE WALL IS ON")]
     LayerMask layerMask;
 
-    [SerializeField]
-    float stunTimer = 0.5f;
-    float setStunTimer;
+    PlayerStunned playerStunned;
 
     SpringJoint2D towSpringJoint2D;
 
@@ -63,13 +61,12 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        setStunTimer = stunTimer;
-        stunTimer = 0f;
-
         playerJump = GetComponent<PlayerJump>();
         rb2d = GetComponent<Rigidbody2D>();
         towSpringJoint2D = transform.GetChild(0).GetComponent<SpringJoint2D>();
         originalTowPosition = towSpringJoint2D.connectedAnchor;
+
+        playerStunned = GetComponent<PlayerStunned>();
 
         towLineRendererScale = towLineRenderer.textureScale;
         towLineRenderer.textureScale = new Vector2(towLineRendererScale.x, -towLineRendererScale.y);
@@ -77,11 +74,8 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         RaycastHit2D floorHit = Physics2D.Raycast(transform.position, -Vector2.up, floorCheckDistance, layerMask);
-        if (visualiseRaycast) Debug.DrawRay(transform.position, -transform.up * floorCheckDistance, Color.green, 1f);
-        if (visualiseRaycast && floorHit)
-        {
-            Debug.DrawRay(floorHit.point, floorHit.normal * 4f, Color.blue, 1f);
-        }
+        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, -transform.right, slopeCheckDistance, layerMask);
+
         //transform.up = floorHit ? floorHit.normal : Vector2.up;
         if (floorHit)
         {
@@ -91,18 +85,18 @@ public class PlayerMovement : MonoBehaviour
             rb2d.MoveRotation(smoothedAngle);
         }
 
-        if (stunTimer > 0)
+        if (playerStunned.IsStunned())
         {
-            stunTimer -= Time.fixedDeltaTime;
+            isMoving = false;
+            animator.SetBool("Walking", false);
             return;
         }
-        
-        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, -transform.right, slopeCheckDistance, layerMask);
-        if (visualiseRaycast) Debug.DrawRay(raycastOrigin.position, -transform.right * slopeCheckDistance, Color.red, 1f);
-        
+
+        DrawDebugRays(floorHit);
+
         if (hit.collider != null && isMoving)
         {
-            rb2d.AddForce(slopeForce * transform.up, ForceMode2D.Impulse); 
+            rb2d.AddForce(slopeForce * transform.up, ForceMode2D.Impulse);
         }
 
         if (isMoving)
@@ -117,6 +111,16 @@ public class PlayerMovement : MonoBehaviour
             animator.speed = Mathf.Clamp(Mathf.Abs(rb2d.linearVelocityX), minAnimationSpeed, maxAnimationSpeed);
             return;
         }
+    }
+
+    void DrawDebugRays(RaycastHit2D floorHit)
+    {
+        if (!visualiseRaycast) return;
+        
+        Debug.DrawRay(transform.position, -transform.up * floorCheckDistance, Color.green, 1f);
+        Debug.DrawRay(raycastOrigin.position, -transform.right * slopeCheckDistance, Color.red, 1f);
+
+        if (floorHit.collider != null) Debug.DrawRay(floorHit.point, floorHit.normal * 4f, Color.blue, 1f);
     }
     public void Movement(InputAction.CallbackContext context)
     {
@@ -142,9 +146,6 @@ public class PlayerMovement : MonoBehaviour
             isMoving = true;
         }
     }
-    public void ActivateStunTimer()
-    {
-        stunTimer = setStunTimer;
-        animator.SetBool("Walking", false);
-    }
+    
+
 }
