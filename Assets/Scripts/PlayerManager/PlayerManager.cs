@@ -28,6 +28,11 @@ public class PlayerManager : MonoBehaviour
 
     BloodSystem[] bloodSystems;
 
+    [SerializeField, Header("The distance when the players are split")]
+    float splitMaxDistance = 8;
+    [SerializeField, Header("The distance when the players are joint")]
+    float jointMaxDistance = 2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -35,6 +40,8 @@ public class PlayerManager : MonoBehaviour
 
         playerOne = GameObject.FindWithTag("PlayerOne");
         playerTwo = GameObject.FindWithTag("PlayerTwo");
+        jointMaxDistance = playerOne.GetComponent<DistanceJoint2D>().distance;
+
         lineManager = gameObject.GetComponent<PlayerLineManager>();
         playerManagerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
@@ -99,8 +106,8 @@ public class PlayerManager : MonoBehaviour
         lineManager.DisableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = false;
         playerTwo.GetComponent<SpringJoint2D>().enabled = false;
-        playerOne.GetComponent<DistanceJoint2D>().enabled = false;
-        playerTwo.GetComponent<DistanceJoint2D>().enabled = false;
+        playerOne.GetComponent<DistanceJoint2D>().distance = splitMaxDistance;
+        playerTwo.GetComponent<DistanceJoint2D>().distance = splitMaxDistance;
         playerOneTowPoint.SetActive(true);
         playerTwoTowPoint.SetActive(true);
         foreach (BloodSystem bloodSystem in bloodSystems)
@@ -134,8 +141,8 @@ public class PlayerManager : MonoBehaviour
         lineManager.EnableLines();
         playerOne.GetComponent<SpringJoint2D>().enabled = true;
         playerTwo.GetComponent<SpringJoint2D>().enabled = true;
-        playerOne.GetComponent<DistanceJoint2D>().enabled = true;
-        playerTwo.GetComponent<DistanceJoint2D>().enabled = true;
+        playerOne.GetComponent<DistanceJoint2D>().distance = jointMaxDistance;
+        playerTwo.GetComponent<DistanceJoint2D>().distance = jointMaxDistance;
         playerOneTowPoint.SetActive(false);
         playerTwoTowPoint.SetActive(false);
         foreach (BloodSystem bloodSystem in bloodSystems)

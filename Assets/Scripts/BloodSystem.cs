@@ -7,31 +7,22 @@ public class BloodSystem : MonoBehaviour
 
     GameObject bloodParticleSystem;
 
-    bool bloodEnabled = false;
-
     void Start()
     {
         bloodParticleSystem = transform.GetChild(0).gameObject;
+        DisableBlood();
     }
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (bloodEnabled)
-        {
-            transform.position = objectToMoveTo.position;
-        }
-        else
-        {
-            transform.position = new Vector2(1000f, 1000f);
-        }
-        
+        transform.position = objectToMoveTo.position;
     }
     public void EnableBlood()
     {
-        bloodEnabled = true;
+        bloodParticleSystem.SetActive(true);
     }
     public void DisableBlood()
     { 
-        bloodEnabled = false;
+        bloodParticleSystem.SetActive(false);
     }
 }
