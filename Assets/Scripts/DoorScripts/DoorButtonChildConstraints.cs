@@ -4,19 +4,21 @@ using UnityEngine.AI;
 
 public class DoorButtonChildConstraints : MonoBehaviour
 {
-    Rigidbody2D rb2d;
+    TargetJoint2D targetJoint2D;
 
     DoorButtonSpecificPlayer doorButtonSpecificPlayer;
 
     [SerializeField]
-    float delay = 0.5f;
+    float targetFrequencyWhenPressed = 5f;
+    [SerializeField]
+    float targetFrequencyWhenReleased = 500f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+        targetJoint2D = GetComponent<TargetJoint2D>();
         doorButtonSpecificPlayer = transform.parent.GetComponent<DoorButtonSpecificPlayer>();
+        targetJoint2D.frequency = targetFrequencyWhenReleased;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -28,10 +30,10 @@ public class DoorButtonChildConstraints : MonoBehaviour
 
         if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
         {
-            rb2d.constraints = RigidbodyConstraints2D.None;
-            rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            targetJoint2D.frequency = targetFrequencyWhenPressed;
         }
     }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision == null)
@@ -41,13 +43,7 @@ public class DoorButtonChildConstraints : MonoBehaviour
 
         if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
         {
-            StartCoroutine(WaitToFreeze());
-        }        
-    }
-
-    IEnumerator WaitToFreeze()
-    {
-        yield return new WaitForSeconds(delay);
-        rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            targetJoint2D.frequency = targetFrequencyWhenReleased;
+        }
     }
 }

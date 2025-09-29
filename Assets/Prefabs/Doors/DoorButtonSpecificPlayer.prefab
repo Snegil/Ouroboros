@@ -269,7 +269,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 2
   m_CollisionDetection: 1
-  m_Constraints: 7
+  m_Constraints: 5
 --- !u!257 &5801548679783735478
 TargetJoint2D:
   m_ObjectHideFlags: 0
@@ -394,4 +394,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9ea2bb4ee3e1e4b862a7757c54ba0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  targetFrequencyWhenPressed: 5
+  targetFrequencyWhenReleased: 500

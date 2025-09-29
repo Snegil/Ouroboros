@@ -22,16 +22,13 @@ public class PlayerJump : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
-    void Update()
-    {
 
-    }
     public RaycastHit2D GroundCheck()
     {
         hit = Physics2D.BoxCast(transform.position, new Vector2(0.5f, 0.1f), 0f, Vector2.down, groundCheckDistance, layerMask);
-        //hit = Physics2D.Raycast(transform.position, -transform.up, groundCheckDistance, layerMask);
         return hit;
     }
+
     public bool isGrounded()
     {
         return GroundCheck().collider == null ? false : true;
@@ -45,6 +42,7 @@ public class PlayerJump : MonoBehaviour
         if (context.canceled) return;
         if (context.started && GroundCheck().collider != null)
         {
+            animator.speed = 1f;
             Jumping();
             animator.SetTrigger("Jump");
         }

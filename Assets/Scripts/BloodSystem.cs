@@ -5,34 +5,33 @@ public class BloodSystem : MonoBehaviour
     Transform objectToMoveTo;
     public Transform ObjectToMoveTo { set { objectToMoveTo = value; } }
 
-    ParticleSystem bloodParticleSystem;
-    ParticleSystem.EmissionModule emissionModule;
+    GameObject bloodParticleSystem;
 
-    float originalRateOverTime;
-    float originalRateOverDistance;
+    bool bloodEnabled = false;
 
     void Start()
     {
-        bloodParticleSystem = GetComponent<ParticleSystem>();
-        emissionModule = bloodParticleSystem.emission;
-        originalRateOverDistance = emissionModule.rateOverDistance.constant;
-        originalRateOverTime = emissionModule.rateOverTime.constant;
-
-        DisableBlood();
+        bloodParticleSystem = transform.GetChild(0).gameObject;
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = objectToMoveTo.position;
+        if (bloodEnabled)
+        {
+            transform.position = objectToMoveTo.position;
+        }
+        else
+        {
+            transform.position = new Vector2(1000f, 1000f);
+        }
+        
     }
     public void EnableBlood()
     {
-        emissionModule.rateOverTime = originalRateOverTime;
-        emissionModule.rateOverDistance = originalRateOverDistance;        
+        bloodEnabled = true;
     }
     public void DisableBlood()
-    {
-        emissionModule.rateOverTime = 0;
-        emissionModule.rateOverDistance = 0;
+    { 
+        bloodEnabled = false;
     }
 }
