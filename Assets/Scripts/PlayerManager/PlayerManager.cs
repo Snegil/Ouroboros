@@ -27,7 +27,6 @@ public class PlayerManager : MonoBehaviour
     float hazardUpwardForce = 2f;
 
     BloodSystem[] bloodSystems;
-    bool gotBloodSystems = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
