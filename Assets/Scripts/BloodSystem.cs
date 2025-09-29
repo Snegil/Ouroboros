@@ -19,19 +19,16 @@ public class BloodSystem : MonoBehaviour
         if (bloodEnabled)
         {
             transform.position = objectToMoveTo.position;
-        }
-        else
-        {
-            transform.position = new Vector2(1000f, 1000f);
-        }
-        
+        }        
     }
     public void EnableBlood()
     {
+        bloodParticleSystem.SetActive(true);
         bloodEnabled = true;
     }
     public void DisableBlood()
     { 
+        bloodParticleSystem.SetActive(false);
         bloodEnabled = false;
     }
 }

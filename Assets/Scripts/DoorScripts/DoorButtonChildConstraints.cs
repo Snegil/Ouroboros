@@ -23,27 +23,37 @@ public class DoorButtonChildConstraints : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision == null)
-        {
-            return;
-        }
+        if (collision == null || collision.gameObject == null) return;
+        if (doorButtonSpecificPlayer == null || doorButtonSpecificPlayer.Player == null) return;
+        if (targetJoint2D == null) return;
 
-        if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
+        try
         {
+            if (!collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag)) return;
+            
             targetJoint2D.frequency = targetFrequencyWhenPressed;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning($"Error in OnTriggerEnter2D: {e.Message}");
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision == null)
-        {
-            return;
-        }
+        if (collision == null || collision.gameObject == null) return;
+        if (doorButtonSpecificPlayer == null || doorButtonSpecificPlayer.Player == null) return;
+        if (targetJoint2D == null) return;
 
-        if (collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag))
+        try
         {
+            if (!collision.gameObject.CompareTag(doorButtonSpecificPlayer.Player.tag)) return;
+            
             targetJoint2D.frequency = targetFrequencyWhenReleased;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning($"Error in OnTriggerExit2D: {e.Message}");
         }
     }
 }
