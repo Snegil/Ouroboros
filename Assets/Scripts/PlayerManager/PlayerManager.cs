@@ -120,15 +120,12 @@ public class PlayerManager : MonoBehaviour
     }
     public void JoinPlayers()
     {
-        RaycastHit2D[] raycastHits2D = Physics2D.RaycastAll(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized, connectionDistance);
+        RaycastHit2D raycastHits2D = Physics2D.Raycast(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized, connectionDistance);
         Debug.DrawRay(playerOne.transform.position, (playerTwo.transform.position - playerOne.transform.position).normalized * connectionDistance, Color.blue, 1f);
-        for (int i = 0; i < raycastHits2D.Length; i++)
+        if (raycastHits2D.collider.CompareTag("PlayerTwo"))
         {
-            if (raycastHits2D[i].collider.CompareTag("PlayerTwo"))
-            {
-                ActivateJoin();
-                return;
-            }
+            ActivateJoin();
+            return;
         }
     }
 
