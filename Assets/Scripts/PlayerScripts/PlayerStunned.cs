@@ -28,6 +28,6 @@ public class PlayerStunned : MonoBehaviour
     }
     public bool IsStunned()
     {
-        return stunTimer != 0;
+        return stunTimer <= 0 ? false : true;
     }
 }

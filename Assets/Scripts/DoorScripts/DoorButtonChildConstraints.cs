@@ -18,6 +18,7 @@ public class DoorButtonChildConstraints : MonoBehaviour
     {
         targetJoint2D = GetComponent<TargetJoint2D>();
         doorButtonSpecificPlayer = transform.parent.GetComponent<DoorButtonSpecificPlayer>();
+        targetJoint2D.frequency = targetFrequencyWhenReleased;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
