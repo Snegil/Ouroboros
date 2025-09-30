@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosiveForce: 5
-  upwardForce: 5
+  upwardForce: 4
 --- !u!58 &8962176647418427080
 CircleCollider2D:
   m_ObjectHideFlags: 0
