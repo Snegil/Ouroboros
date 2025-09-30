@@ -31,7 +31,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Header("The distance when the players are joint")]
     float jointMaxDistance = 2;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField]
+    float splitActionCooldown = 0.5f;
+    float setSplitActionCooldown;
     void Awake()
     {
         players.Add(GameObject.FindWithTag("PlayerOne"));
@@ -44,18 +46,30 @@ public class PlayerManager : MonoBehaviour
 
         playerOneTowPoint = players[0].transform.GetChild(0).gameObject;
         playerTwoTowPoint = players[1].transform.GetChild(0).gameObject;
-    }
-     void Start()
-     {
-         GameObject[] bloodSystemGameObjects = GameObject.FindGameObjectsWithTag("PlayerBlood");
-      
-         bloodSystems = new BloodSystem[bloodSystemGameObjects.Length];
 
-         for (int i = 0; i < bloodSystemGameObjects.Length; i++)
-         {
-             bloodSystems[i] = bloodSystemGameObjects[i].GetComponent<BloodSystem>();
-         }
-     }
+        setSplitActionCooldown = splitActionCooldown;
+    }
+    void Start()
+    {
+        GameObject[] bloodSystemGameObjects = GameObject.FindGameObjectsWithTag("PlayerBlood");
+      
+        bloodSystems = new BloodSystem[bloodSystemGameObjects.Length];
+
+        for (int i = 0; i < bloodSystemGameObjects.Length; i++)
+        {
+            bloodSystems[i] = bloodSystemGameObjects[i].GetComponent<BloodSystem>();
+        }
+    }
+
+    void Update()
+    {
+        if (splitActionCooldown > 0)
+        {
+            splitActionCooldown -= Time.deltaTime;
+            return;
+        }
+    }
+
     public GameObject GetPlayerOne()
     {
         return players[0];
@@ -83,6 +97,10 @@ public class PlayerManager : MonoBehaviour
 
     public void SplitAction()
     {
+        if (splitActionCooldown > 0) return;
+
+        splitActionCooldown = setSplitActionCooldown;
+        
         if (isJoint)
         {
             SplitPlayers();
