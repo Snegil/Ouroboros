@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 2913dc7b5d633fc4a90da414d11d08af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2843296386908477324
+    second: Arcade Tutorial Screens_0
+  - first:
+      213: -8877473487540386826
+    second: Arcade Tutorial Screens_1
+  - first:
+      213: -2454442392724953426
+    second: Arcade Tutorial Screens_2
+  - first:
+      213: -1709296927796100920
+    second: Arcade Tutorial Screens_3
+  - first:
+      213: -567305208182238406
+    second: Arcade Tutorial Screens_4
+  - first:
+      213: 2156455234188316990
+    second: Arcade Tutorial Screens_5
+  - first:
+      213: -5334327013624588891
+    second: Arcade Tutorial Screens_6
+  - first:
+      213: 3733933266361694660
+    second: Arcade Tutorial Screens_7
+  - first:
+      213: -5129900300591221628
+    second: Arcade Tutorial Screens_8
+  - first:
+      213: -975931795507194340
+    second: Arcade Tutorial Screens_9
+  - first:
+      213: 6968777065931359211
+    second: Arcade Tutorial Screens_10
+  - first:
+      213: -4251647728211276206
+    second: Arcade Tutorial Screens_11
+  - first:
+      213: 829938854463471000
+    second: Arcade Tutorial Screens_12
+  - first:
+      213: 5310075103095317595
+    second: Arcade Tutorial Screens_13
+  - first:
+      213: 4150744384759679145
+    second: Arcade Tutorial Screens_14
+  - first:
+      213: 6201350098981554801
+    second: Arcade Tutorial Screens_15
+  - first:
+      213: 1417443046423540568
+    second: Arcade Tutorial Screens_16
+  - first:
+      213: -9040859950022039665
+    second: Arcade Tutorial Screens_17
+  - first:
+      213: 5248449494166375029
+    second: Arcade Tutorial Screens_18
+  - first:
+      213: -6372631139498021953
+    second: Arcade Tutorial Screens_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87d4dcdffa657720800000000000000
+      internalID: 2843296386908477324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f30530e5e0ecc480800000000000000
+      internalID: -8877473487540386826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea628f3e5a110fdd0800000000000000
+      internalID: -2454442392724953426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_3
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 812
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c00c0b108b5748e0800000000000000
+      internalID: -1709296927796100920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33911b3be68028f0800000000000000
+      internalID: -567305208182238406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3193df2c944ded10800000000000000
+      internalID: 2156455234188316990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5d225f7d9a8f5b0800000000000000
+      internalID: -5334327013624588891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_7
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 629
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9b084c58891d330800000000000000
+      internalID: 3733933266361694660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48437122bdeeec8b0800000000000000
+      internalID: -5129900300591221628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16d8c3e33bc472f0800000000000000
+      internalID: -975931795507194340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_10
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be34abdb1d116b060800000000000000
+      internalID: 6968777065931359211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_11
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 447
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25eced9daec1ff4c0800000000000000
+      internalID: -4251647728211276206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89df69dadf8848b00800000000000000
+      internalID: 829938854463471000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5464aa1c2d21b940800000000000000
+      internalID: 5310075103095317595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a84c0fb6086a9930800000000000000
+      internalID: 4150744384759679145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_15
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 260
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a01a11f0f9f0650800000000000000
+      internalID: 6201350098981554801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8533c67d0f4cba310800000000000000
+      internalID: 1417443046423540568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_17
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8761e6a6c9688280800000000000000
+      internalID: -9040859950022039665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_18
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a8d59e10d36d840800000000000000
+      internalID: 5248449494166375029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade Tutorial Screens_19
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 75
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbba0a50ebddf87a0800000000000000
+      internalID: -6372631139498021953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Arcade Tutorial Screens_0: 2843296386908477324
+      Arcade Tutorial Screens_1: -8877473487540386826
+      Arcade Tutorial Screens_10: 6968777065931359211
+      Arcade Tutorial Screens_11: -4251647728211276206
+      Arcade Tutorial Screens_12: 829938854463471000
+      Arcade Tutorial Screens_13: 5310075103095317595
+      Arcade Tutorial Screens_14: 4150744384759679145
+      Arcade Tutorial Screens_15: 6201350098981554801
+      Arcade Tutorial Screens_16: 1417443046423540568
+      Arcade Tutorial Screens_17: -9040859950022039665
+      Arcade Tutorial Screens_18: 5248449494166375029
+      Arcade Tutorial Screens_19: -6372631139498021953
+      Arcade Tutorial Screens_2: -2454442392724953426
+      Arcade Tutorial Screens_3: -1709296927796100920
+      Arcade Tutorial Screens_4: -567305208182238406
+      Arcade Tutorial Screens_5: 2156455234188316990
+      Arcade Tutorial Screens_6: -5334327013624588891
+      Arcade Tutorial Screens_7: 3733933266361694660
+      Arcade Tutorial Screens_8: -5129900300591221628
+      Arcade Tutorial Screens_9: -975931795507194340
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
