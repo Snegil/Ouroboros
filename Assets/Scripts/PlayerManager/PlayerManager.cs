@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using Unity.Mathematics;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
