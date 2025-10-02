@@ -59,6 +59,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +82,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
@@ -136,6 +139,9 @@ MonoBehaviour:
   connectionDistance: 4
   hazardExplosiveForceAmount: 5
   hazardUpwardForce: 2
+  splitMaxDistance: 8
+  jointMaxDistance: 2
+  splitActionCooldown: 0.5
 --- !u!114 &1400535972393309066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  rotateSpeed: 15
   sizeCurve:
     serializedVersion: 2
     m_Curve:
@@ -204,10 +209,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   maxHP: 100
-  hpRegen: 10
-  hpLost: 5
+  hpRegen: 5
+  hpLost: 10
   vignette: {fileID: 0}
-  allowDeath: 0
+  allowDeath: 1
+  vignetteCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.76357853
+      value: 0.7271035
+      inSlope: 3.0119956
+      outSlope: 3.0119956
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.18930092
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.7108012
+      outSlope: 0.7108012
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4620205
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &430865427999805198
 MonoBehaviour:
   m_ObjectHideFlags: 0

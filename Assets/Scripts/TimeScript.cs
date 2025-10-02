@@ -1,10 +1,8 @@
-using System.Threading;
 using TMPro;
 using UnityEngine;
 
 public class TimeScript : MonoBehaviour
 {
-    bool startcounting = false;
     float time = 0f;
 
     TextMeshProUGUI text;
@@ -13,7 +11,6 @@ public class TimeScript : MonoBehaviour
     void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
-        startcounting = true;    
     }
 
     // Update is called once per frame
@@ -21,6 +18,5 @@ public class TimeScript : MonoBehaviour
     {
         time += Time.deltaTime;
         text.text = time.ToString();
-        Debug.Log(time);
     }
 }
