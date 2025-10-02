@@ -219,7 +219,7 @@
                     "name": "Submit",
                     "type": "Button",
                     "id": "973ec0bf-e28d-425c-ab62-e23a8ca15ae5",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -228,7 +228,7 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "260459cf-298b-4ad8-b526-cda642fa95e8",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -577,17 +577,6 @@
                     "name": "",
                     "id": "8fd14340-25ce-4746-a1fe-adaa0271f43f",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Submit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "85f39b7b-c4fe-4c15-bc15-8a048f70fcd6",
-                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

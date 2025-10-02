@@ -819,6 +819,17 @@
                 },
                 {
                     "name": "",
+                    "id": "44e61de1-5497-49d7-b316-b348e7c15cf6",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "CLICK",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fa28d779-18f6-41b0-ae9a-211a9ecfc7c1",
                     "path": "<Gamepad>/start",
                     "interactions": "",
