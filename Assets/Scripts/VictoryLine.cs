@@ -8,6 +8,6 @@ public class VictoryLine : MonoBehaviour
         {
             PlayerPrefs.SetInt("Victory", 1);
             GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<SceneTransition>().ChangeScene("EndScreen");
-        }        
+        }
     }
 }
