@@ -409,6 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbed5e32f0304c47806825efb593218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayOneShot
+  audioSource: {fileID: 0}
 --- !u!1 &1534683221264322507
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f0e98592abacb409230d1049a9f2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionTime: 1
+  transitionTime: 0.5
 --- !u!114 &5971901521757680172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbed5e32f0304c47806825efb593218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayOneShot
+  audioSource: {fileID: 0}
 --- !u!1 &4907622800237225685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbed5e32f0304c47806825efb593218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayOneShot
+  audioSource: {fileID: 0}
 --- !u!1 &8412603905487176403
 GameObject:
   m_ObjectHideFlags: 0

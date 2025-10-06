@@ -5,7 +5,7 @@ public class OnEnableFirstSelect : MonoBehaviour
 {
     [SerializeField]
     GameObject objectToSelect;
-    void OnEnable()
+    void Start()
     {
         EventSystem.current.SetSelectedGameObject(objectToSelect);
     }

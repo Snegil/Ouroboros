@@ -16,6 +16,7 @@ public class LoadPrefAndChangeSprite : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Victory"))
         {
+            Debug.LogWarning("HAS PREF VICTORY");
             loseObject.SetActive(false);
             winObject.SetActive(true);
 

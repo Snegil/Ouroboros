@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbed5e32f0304c47806825efb593218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayOneShot
+  audioSource: {fileID: 347875839}
 --- !u!82 &347875839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1016,6 +1017,7 @@ GameObject:
   - component: {fileID: 665582746}
   - component: {fileID: 665582745}
   - component: {fileID: 665582744}
+  - component: {fileID: 665582747}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1030,7 +1032,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665582743}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
@@ -1084,6 +1086,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &665582747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665582743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_PointAction: {fileID: -430800425959990024, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_MoveAction: {fileID: 3422924567179635478, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_SubmitAction: {fileID: 981233349509993149, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_CancelAction: {fileID: -6138790017192511991, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_LeftClickAction: {fileID: -2416322852448146639, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_MiddleClickAction: {fileID: -3862126046042859794, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_RightClickAction: {fileID: 6749255775362096642, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_ScrollWheelAction: {fileID: 5762252005647792349, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 1478592705352430100, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 8657242153726644467, guid: c64a66d94f52b4d45836a73df6aac972, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!1 &698222677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbed5e32f0304c47806825efb593218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayOneShot
+  audioSource: {fileID: 1675140233}
 --- !u!82 &1675140233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2144,6 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bbed5e32f0304c47806825efb593218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayOneShot
+  audioSource: {fileID: 1720465610}
 --- !u!82 &1720465610
 AudioSource:
   m_ObjectHideFlags: 0
